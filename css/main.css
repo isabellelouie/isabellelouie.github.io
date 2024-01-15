@@ -540,7 +540,8 @@ figure img {
 }
 
 .headshot {
-    padding-top: 1.5rem;
+    margin-top: 1.25rem;
+    border-radius: 8px;
 }
 
 .case-body h3 {
