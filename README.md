@@ -1,4 +1,4 @@
-# Isabelle Louie - UX Researcher from Vancouver, B.C.
+# Isabelle Louie - UX Portfolio
 
-👋🏻 Hi! I’m Isabelle, a UX researcher and designer weaving consumer insights into meaningful
-user experiences. Welcome to my portfolio: https://isabellelouie.github.io/portfolio/ 
+👋🏻 Hi! I’m Isabelle, a UX researcher and product designer transforming user insights into meaningful experiences. 
+Welcome to my portfolio: https://isabellelouie.github.io
