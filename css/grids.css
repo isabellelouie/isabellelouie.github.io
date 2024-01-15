@@ -1,0 +1,528 @@
+.grid {
+    display: grid;
+}
+
+@media (min-width: 0) {
+
+    h1,
+    h2.h2-xl {
+        font-size: 1.75rem;
+        max-width: 100%;
+        padding: 1.25rem 0;
+    }
+
+    .case h1 {
+        margin-top: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    h2.h2-sm {
+        font-weight: 500;
+        font-size: 0.85rem;
+        margin-top: 0;
+        color: #959595
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    nav.navbar {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .section {
+        margin: 0 1rem;
+    }
+
+    .grid.bio.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+
+    .section.bio {
+        margin-top: 2rem;
+    }
+
+    .biography {
+        padding: 0;
+    }
+
+    .grid.case-body.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .project-details {
+        padding-bottom: 1.5rem;
+    }
+
+    .grid.case.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        margin-top: 5rem;
+    }
+
+    .case-body h3 {
+        margin-top: 0.15rem;
+    }
+
+    .pop-up {
+        width: 100%;
+    }
+
+    .quote {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote p {
+        font-size: 1.1rem;
+        line-height: 1.25rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    p.author {
+        font-size: 0.75rem;
+        line-height: normal;
+        padding-bottom: 1rem;
+    }
+
+    .grid.img {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+
+    .p-cap.comp {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .final-design {
+        margin-top: 5rem;
+    }
+
+
+    .final-design a {
+        font-size: 0.85rem;
+    }
+
+    .grid.case-intro.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .grey {
+        margin: 5rem 0;
+        padding: 2.5rem 1rem;
+    }
+
+    .home-new {
+        margin: 5rem 0;
+    }
+
+    .home-new h4 {
+        padding-top: 0;
+    }
+
+    .grid.footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+
+    .grid.case-body.one {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1.5rem;
+    }
+
+    .item1 {
+        grid-column: 1 / span 2;
+    }
+
+    .home h1,
+    .home .h2-intro,
+    .home .link-btn {
+        text-align: left;
+    }
+
+    .navbar li {
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .shorts iframe {
+        margin-top: 2rem;
+    }
+
+    .align-right,
+    .align-left,
+    .align-center {
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 0.6rem;
+        display: inline;
+    }
+
+    .float-right {
+        padding-left: 1rem;
+    }
+
+    h1.title {
+        padding-bottom: 0;
+    }
+
+    h2.subtitle {
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 26.5625rem) {
+    .h2-sm {
+        font-size: 0.8rem;
+    }
+
+    .navbar li {
+        padding-left: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 38rem) {
+
+    h1,
+    h2.h2-xl {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.925rem;
+    }
+
+    .project-details {
+        padding-bottom: 0;
+    }
+
+    .grid.case.two {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    h2.h2-sm {
+        margin-top: 0.75rem;
+    }
+
+    .pop-up {
+        width: 80%;
+    }
+
+    .quote {
+        padding: 1rem 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote p {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    p.author {
+        font-size: 0.95rem;
+    }
+
+    .grid.two {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+
+    .grid.img {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+
+    p.p-cap .comp {
+        padding-bottom: 5rem;
+    }
+
+    .final-design,
+    .prototype {
+        margin-top: 6.5rem;
+    }
+
+    .grid.yt-short {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .grid.yt-short.single {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .align-left {
+        text-align: left;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+
+    .float-right {
+        padding-left: 2rem;
+    }
+
+    h1.title {
+        padding-bottom: 0.75rem;
+    }
+
+    h2.subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 48rem) {
+
+    h1,
+    h2.h2-xl {
+        font-size: 2.25rem;
+        padding: 0;
+    }
+
+    nav.navbar {
+        padding: 1.5rem 2.5rem 2.5rem;
+    }
+
+    .case h1 {
+        margin-top: 5rem;
+    }
+
+    .section {
+        margin: 2rem 2.5rem;
+    }
+
+    .grid.home {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 3rem;
+    }
+
+    .grid.home-new {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 3rem;
+    }
+
+    .home-new {
+        margin: 2.5rem 0;
+    }
+
+    .home-new h4 {
+        padding-top: 2rem;
+    }
+
+    .grid.bio.two {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .section.bio {
+        margin-top: 5rem;
+    }
+
+    .biography {
+        padding: 0 3rem;
+    }
+
+    .section {
+        margin: 4rem 3rem;
+    }
+
+    .grid.case-body.two {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1.5rem;
+    }
+
+    .grid.case-body.none {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+
+    .grid.case-body.four,
+    .grid.case-body.three,
+    .grid.case-body.two,
+    .grid.case-body.none,
+    .section.case {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .grid.case-intro.two {
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 3rem;
+    }
+
+
+    p.p-enlarge {
+        padding-bottom: 7.5rem;
+    }
+
+    .grey {
+        padding: 2.5rem 3rem;
+    }
+
+    .home h1,
+    .home .h2-intro,
+    .home .link-btn {
+        text-align: left;
+    }
+}
+
+@media (min-width: 56.1875rem) {
+
+    /* .home h1 {
+        padding: 0 5rem;
+    } */
+}
+
+@media (min-width: 65rem) {
+
+    .home h1,
+    .home h2 {
+        max-width: 100%;
+        line-height: 2.5rem;
+    }
+
+    .home h2 {
+        line-height: 1.5rem;
+        max-width: 90%;
+    }
+
+    .final-design,
+    .prototype {
+        margin-top: 5rem;
+    }
+
+
+    .section {
+        margin: 4rem 12.5rem;
+    }
+
+    .grey {
+        padding: 2.5rem 12.5rem;
+    }
+
+
+    .grid.case-body.three {
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1.5rem;
+    }
+
+    .item1 {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (min-width: 77rem) {
+
+    .grid.case-body.four,
+    .grid.case-body.three,
+    .grid.case-body.two,
+    .grid.case-body.none,
+    .section.case {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    .grid.case-body.four {
+        grid-template-columns: 2fr 2fr 4fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 92.5rem) {
+    .grey {
+        padding: 2.5rem 12.5rem;
+    }
+
+    .section {
+        margin: 4rem 12.5rem;
+    }
+
+    .biography p {
+        max-width: 55rem;
+    }
+
+    .grid.bio.two {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 2rem;
+    }
+
+    .grey {
+        padding: 2.5rem 15rem;
+    }
+}
