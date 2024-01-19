@@ -521,8 +521,4 @@
         grid-auto-flow: row;
         gap: 2rem;
     }
-
-    .grey {
-        padding: 2.5rem 15rem;
-    }
 }
