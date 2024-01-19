@@ -501,11 +501,11 @@
         gap: 1.5rem;
     }
 
-    div.embed-post {
+    /* div.embed-post {
         text-align: center;
         padding-left: 7rem;
         padding-right: 5rem;
-    }
+    } */
 }
 
 @media (min-width: 92.5rem) {
