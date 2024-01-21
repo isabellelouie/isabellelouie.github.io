@@ -874,6 +874,11 @@ p.float-left {
     /* padding-bottom: 2rem; */
 }
 
+h2.location {
+    padding-top: 0;
+    font-size: 1.05rem;
+}
+
 
 /* @font-face {
     font-family: "Sequel Sans Body";
