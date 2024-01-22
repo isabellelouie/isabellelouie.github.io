@@ -879,6 +879,21 @@ h2.location {
     font-size: 1.05rem;
 }
 
+.fade {
+    /* margin: 50px;
+    padding: 50px;
+    background-color: lightgreen; */
+    transition: opacity 0.25s ease-in;
+}
+
+.fadeOut {
+    opacity: 0.25;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
 
 /* @font-face {
     font-family: "Sequel Sans Body";
