@@ -33,7 +33,7 @@ h1 {
 
 }
 
-#recent-projects h1 {
+#work h1 {
     padding-top: 5rem;
 }
 
@@ -880,14 +880,11 @@ h2.location {
 }
 
 .fade {
-    /* margin: 50px;
-    padding: 50px;
-    background-color: lightgreen; */
     transition: opacity 0.25s ease-in;
 }
 
 .fadeOut {
-    opacity: 0.25;
+    opacity: 0.375;
 }
 
 .fadeIn {
