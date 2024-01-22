@@ -185,6 +185,7 @@ h4 {
     font-size: 0.85rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.0125rem;
 }
 
 .home-new h4 {
@@ -841,7 +842,7 @@ a.btn {
     margin-bottom: 2rem;
     font-size: 1.35rem;
     font-weight: 400;
-    line-height: 1.35;
+    line-height: 1.45;
     letter-spacing: 0.0063rem;
 }
 
@@ -884,11 +885,28 @@ h2.location {
 }
 
 .fadeOut {
-    opacity: 0.375;
+    opacity: 0.5;
 }
 
 .fadeIn {
     opacity: 1;
+}
+
+.redcircle-link:link {
+    color: #ea404d;
+    text-decoration: none;
+}
+
+.redcircle-link:hover {
+    color: #ea404d;
+}
+
+.redcircle-link:active {
+    color: #ea404d;
+}
+
+.redcircle-link:visited {
+    color: #ea404d;
 }
 
 
