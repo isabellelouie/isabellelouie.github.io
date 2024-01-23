@@ -456,6 +456,8 @@ figure img {
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 3.5rem;
+    /* background-color: #F8F9FA; */
+    background-color: #FFF;
 }
 
 .footer {
