@@ -299,9 +299,10 @@ nav.navbar {
 
 a.logo:hover,
 a.logo:focus {
-    color: #368069;
+    /* color: #368069; */
     /* color: #3375E0;  */
-    text-decoration: none;
+    color: #202020;
+    /* text-decoration: underline; */
     /* transition: all .2s ease-in-out;
     transform: scale(1.25); */
 }
@@ -341,14 +342,17 @@ a.logo:focus {
 
 .menu a:hover,
 .menu a:focus {
-    text-decoration: none;
-    color: #368069;
+    /* text-decoration: none;
+    color: #368069; */
+    text-decoration: underline;
+
     /* color: #3375E0;  */
     /* background-color: #21212115; */
 }
 
-.navbar .active {
-    color: #368069;
+.navbar .nav-active {
+    /* color: #368069; */
+    text-decoration: underline;
 }
 
 
@@ -368,9 +372,8 @@ a:focus,
     /* text-decoration: underline; */
     text-decoration: none;
     /* color: #368069; */
-    color: #3375E0; 
+    color: #3375E0;
 }
-
 
 .selected a {
     color: #b2b2b2;
@@ -547,8 +550,12 @@ figure img {
 }
 
 .headshot {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     border-radius: 8px;
+}
+
+.headshot.second {
+    margin-top: 0;
 }
 
 .case-body h3 {
