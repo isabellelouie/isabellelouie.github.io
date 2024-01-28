@@ -31,7 +31,7 @@
         font-size: 1.15rem;
     }
 
-    p {
+    p, li {
         font-size: 0.85rem;
     }
 
@@ -227,7 +227,7 @@
         font-size: 1.25rem;
     }
 
-    p {
+    p, li {
         font-size: 0.925rem;
     }
 

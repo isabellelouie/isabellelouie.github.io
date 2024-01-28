@@ -198,7 +198,8 @@ h5 {
     color: #959595;
 }
 
-p {
+p,
+li {
     line-height: 1.5rem;
     font-weight: 300;
 }
@@ -299,6 +300,7 @@ nav.navbar {
 a.logo:hover,
 a.logo:focus {
     color: #368069;
+    /* color: #3375E0;  */
     text-decoration: none;
     /* transition: all .2s ease-in-out;
     transform: scale(1.25); */
@@ -341,6 +343,7 @@ a.logo:focus {
 .menu a:focus {
     text-decoration: none;
     color: #368069;
+    /* color: #3375E0;  */
     /* background-color: #21212115; */
 }
 
@@ -364,7 +367,8 @@ a:focus,
 .footer a p:focus {
     /* text-decoration: underline; */
     text-decoration: none;
-    color: #368069;
+    /* color: #368069; */
+    color: #3375E0; 
 }
 
 
@@ -912,6 +916,10 @@ h2.location {
     color: #ea404d;
 }
 
+strong {
+    color: #368069;
+    font-weight: 500;
+}
 
 /* @font-face {
     font-family: "Sequel Sans Body";
