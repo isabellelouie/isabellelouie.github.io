@@ -158,10 +158,9 @@ h3 {
 }
 
 h3.subheading {
-    /* color: #31567f;
-    color: #3375E0; */
-    color: #368069;
-    /* color: #3D4043; */
+    /* color: #368069; */
+    /* color: #38A3A5; */
+    color: #1b8463;
     font-size: 1.1rem;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -260,13 +259,14 @@ h3.insights {
     padding-bottom: 0;
 }
 
-h1 em {
-    color: #368069;
+h1 em, p strong {
+    color: #1b8463;
     font-style: normal;
 }
 
 h2 em {
-    color: #4873a0;
+    /* color: #4873a0; */
+    color: #3375E0;
     font-style: normal;
 }
 
@@ -345,7 +345,7 @@ a.logo:focus {
 .menu a:focus {
     /* text-decoration: none;
     color: #368069; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
 
     /* color: #3375E0;  */
     /* background-color: #21212115; */
@@ -372,7 +372,6 @@ a:focus,
 .footer a p:focus {
     /* text-decoration: underline; */
     text-decoration: none;
-    /* color: #368069; */
     color: #3375E0;
 }
 
@@ -670,7 +669,7 @@ p.sub-p-img {
     padding-bottom: 0;
 }
 
-.quote {
+/* .quote {
     min-height: 5rem;
     background: #368069;
     border-radius: 8px;
@@ -682,7 +681,7 @@ p.sub-p-img {
 .quote p {
     font-size: 1.5rem;
     line-height: 2.25rem;
-}
+} */
 
 p.author {
     font-size: 0.95rem;
@@ -782,8 +781,9 @@ video {
 .link-btn .primary-btn:hover,
 .link-btn .primary-btn:focus {
     text-decoration: none;
-    background-color: #4873a0;
-    border-color: #4873a0;
+    /* background-color: #4873a0; */
+    background-color: #3375E0;
+    border-color: #3375E0;
     color: #FFF;
     transition: all 0.3s;
 
@@ -813,7 +813,7 @@ mark {
 
 
 
-a.btn {
+/* a.btn {
     background: #368069;
     color: #FFF;
     border: none;
@@ -830,7 +830,7 @@ a.btn {
 .btn:focus {
     background-color: #276553;
     text-decoration: none;
-}
+} */
 
 .home-pad {
     padding-top: 9rem;
@@ -929,10 +929,6 @@ h2.hobbies {
     color: #ea404d;
 }
 
-strong {
-    color: #368069;
-    font-weight: 500;
-}
 
 /* @font-face {
     font-family: "Sequel Sans Body";
