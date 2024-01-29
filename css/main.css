@@ -331,6 +331,7 @@ a.logo:focus {
     flex-direction: row;
     align-items: center;
 
+
     /* padding-left: 0.85rem; */
     /* padding-right: 0.85rem;  */
 
@@ -891,6 +892,11 @@ p.float-left {
 
 h2.location {
     padding-top: 0;
+    font-size: 1.05rem;
+}
+
+h2.hobbies {
+    /* padding-top: 7rem; */
     font-size: 1.05rem;
 }
 
