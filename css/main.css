@@ -259,7 +259,8 @@ h3.insights {
     padding-bottom: 0;
 }
 
-h1 em, p strong {
+h1 em,
+p strong {
     color: #1b8463;
     font-style: normal;
 }
@@ -782,8 +783,9 @@ video {
 .link-btn .primary-btn:focus {
     text-decoration: none;
     /* background-color: #4873a0; */
-    background-color: #3375E0;
-    border-color: #3375E0;
+    background-color: #3469c0;
+    border-color: #3469c0;
+    /* border-color: #3375E0; */
     color: #FFF;
     transition: all 0.3s;
 
