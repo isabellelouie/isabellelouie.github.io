@@ -782,10 +782,15 @@ video {
 .link-btn .primary-btn:hover,
 .link-btn .primary-btn:focus {
     text-decoration: none;
-    /* background-color: #4873a0; */
-    background-color: #3469c0;
-    border-color: #3469c0;
-    /* border-color: #3375E0; */
+    background-color: #4873a0;
+    border-color: #4873a0;
+
+    /* background-color: #3469c0; 
+    border-color: #3469c0;*/
+
+    /* background-color: #1b8463; 
+    border-color: #1b8463;*/
+
     color: #FFF;
     transition: all 0.3s;
 
@@ -798,7 +803,7 @@ video {
 }
 
 .link-btn .primary-btn {
-    background-color: #111111;
+    background-color: #202020;
     color: #fff;
     margin-right: 0.5rem;
     /* box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .1); */
