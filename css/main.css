@@ -267,7 +267,8 @@ p strong {
 
 h2 em {
     /* color: #4873a0; */
-    color: #3375E0;
+    /* color: #3375E0; */
+    color: #4075D7;
     font-style: normal;
 }
 
@@ -373,7 +374,8 @@ a:focus,
 .footer a p:focus {
     /* text-decoration: underline; */
     text-decoration: none;
-    color: #3375E0;
+    /* color: #3375E0; old blue */
+    color: #4075D7;
 }
 
 .selected a {
@@ -784,6 +786,9 @@ video {
     text-decoration: none;
     background-color: #4873a0;
     border-color: #4873a0;
+
+    background-color: #4075D7;
+    border-color: #4075D7;
 
     /* background-color: #3469c0; 
     border-color: #3469c0;*/
