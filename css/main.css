@@ -912,7 +912,7 @@ h2.hobbies {
     font-size: 1.05rem;
 }
 
-.fade {
+/* .fade {
     transition: opacity 0.25s ease-in;
 }
 
@@ -922,7 +922,7 @@ h2.hobbies {
 
 .fadeIn {
     opacity: 1;
-}
+} */
 
 .redcircle-link:link {
     color: #ea404d;
