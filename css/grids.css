@@ -461,7 +461,6 @@
         margin-top: 5rem;
     }
 
-
     .section {
         margin: 4rem 12.5rem;
     }
@@ -469,7 +468,6 @@
     .grey {
         padding: 2.5rem 12.5rem;
     }
-
 
     .grid.case-body.three {
         grid-template-columns: 1fr 2fr 3fr;
