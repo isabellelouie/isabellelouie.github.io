@@ -31,7 +31,8 @@
         font-size: 1.15rem;
     }
 
-    p, li {
+    p,
+    li {
         font-size: 0.85rem;
     }
 
@@ -199,6 +200,11 @@
         font-size: 0.9rem;
         margin-top: 0;
     }
+
+    /* .section.grid.bio.grey {
+        margin: 0;
+        padding-bottom: 0;
+    } */
 }
 
 @media (min-width: 26.5625rem) {
@@ -227,7 +233,8 @@
         font-size: 1.25rem;
     }
 
-    p, li {
+    p,
+    li {
         font-size: 0.925rem;
     }
 
