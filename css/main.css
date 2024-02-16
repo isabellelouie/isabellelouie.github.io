@@ -420,18 +420,20 @@ picture img {
 
 a:hover img,
 a:focus img {
-    filter: brightness(0.975);
-    box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, .1);
-    /* transition-property: transform;
+    /* filter: brightness(0.975); */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15);
+    
+    transition-duration: .3s;
+    transition-property: transform;
     transition-timing-function: ease-out;
-    transform: translateY(0.3em); */
+    transform: translateY(0.3em);
 }
 
 .view-img a:hover img,
 .view-img a:focus img {
-    filter: brightness(0.95);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
-    transition-duration: .3s;
+    /* filter: brightness(0.95); */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15);
+    /* transition-duration: .3s; */
 
     /*transition-property: transform;
     transition-timing-function: ease-out;
