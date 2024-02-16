@@ -534,3 +534,13 @@
         gap: 2rem;
     }
 }
+
+@media (min-width: 115rem) {
+    .grey {
+        padding: 2.5rem 22.5rem;
+    }
+
+    .section {
+        margin: 4rem 22.5rem;
+    }
+}
