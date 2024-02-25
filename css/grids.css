@@ -205,6 +205,13 @@
         margin: 0;
         padding-bottom: 0;
     } */
+
+    .grid.concepts.three {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
 }
 
 @media (min-width: 26.5625rem) {
