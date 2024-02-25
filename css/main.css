@@ -166,6 +166,14 @@ h3.subheading {
     padding-bottom: 0;
 }
 
+h3.subheading.journey {
+    color: #1e538b;
+    /* color: #1b8463; */
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 h3.p-in {
     margin: 0;
 }
@@ -213,6 +221,7 @@ li {
 
 .bold {
     font-weight: 500;
+    color: #000;
 }
 
 
@@ -422,7 +431,7 @@ a:hover img,
 a:focus img {
     /* filter: brightness(0.975); */
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .15);
-    
+
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
@@ -526,6 +535,16 @@ figure img {
 
 .section.bio {
     margin-top: 5rem;
+}
+
+.bio .float-left {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.bio .float-left:hover,
+.bio .float-left:focus {
+    text-decoration: none;
 }
 
 .section.main {
