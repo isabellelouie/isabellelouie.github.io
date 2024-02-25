@@ -34,6 +34,12 @@ for (let i = 0; i < newTabImg.length; i++) {
   )
 }
 
+// When anywhere outside the image is clicked, the modal closes 
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Create a variable called closeButton and assign it the element with the class 'close' (the X button)
 var closeButton = document.getElementsByClassName("close")[0];

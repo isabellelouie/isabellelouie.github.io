@@ -626,8 +626,7 @@ p.sub-p-img {
 .pop-up {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 50rem;
+    width: 100%;
 }
 
 .caption {
@@ -644,9 +643,9 @@ p.sub-p-img {
 .close {
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 2.5rem;
     color: #FFF;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .close:hover,
