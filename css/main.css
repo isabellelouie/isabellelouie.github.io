@@ -197,7 +197,7 @@ h2.case-tag {
 } */
 
 .case-tag.color1 {
-    background-color: #68b978;
+    background-color: #6eb57b;
     color: #FFF;
 }
 
@@ -208,6 +208,11 @@ h2.case-tag {
 
 .case-tag.color3 {
     background-color: #e27594;
+    color: #FFF;
+}
+
+.case-tag.color4 {
+    background-color: #919ae0;
     color: #FFF;
 }
 
@@ -1026,6 +1031,10 @@ h2.hobbies {
 .fadeIn {
     opacity: 1;
 } */
+
+.faded {
+    opacity: 0.5;
+}
 
 .redcircle-link:link {
     color: #ea404d;
