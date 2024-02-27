@@ -182,7 +182,7 @@ h2.case-tag {
     /* color: #959595; */
 
     /* rounded buttons */
-    background-color: #f8feff;
+    background-color: #f8f9ff;
     border-radius: 75px;
     border: solid 1px;
     border-color: #21212150;
@@ -193,17 +193,17 @@ h2.case-tag {
 }
 
 .case-tag.color1 {
-    background-color: #599064;
+    background-color: #63af72;
     color: #FFF;
 }
 
 .case-tag.color2 {
-    background-color: #2f73a6;
+    background-color: #4981ac;
     color: #FFF;
 }
 
 .case-tag.color3 {
-    background-color: #f587a6;
+    background-color: #de7b97;
     color: #FFF;
 }
 
