@@ -37,12 +37,10 @@
         letter-spacing: 0.025rem;
         text-align: center;
         padding-bottom: 0rem;
-        /* line-height: 3rem; */
     }
 
     .home h2 {
         font-size: 1.5rem;
-        letter-spacing: 0;
         padding-top: 0;
     }
 
@@ -403,7 +401,7 @@
     }
 
     h2.case-tag {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .link-btn p {

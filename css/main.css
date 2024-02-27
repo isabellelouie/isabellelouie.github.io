@@ -83,7 +83,7 @@ h2 {
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.1rem;
     line-height: 2.5rem;
     text-align: center;
     color: #1b8463;
@@ -175,7 +175,7 @@ h2.h2-sm {
 
 h2.case-tag {
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     padding: 0.25rem 0.85rem;
     margin-right: 0.25rem;
@@ -185,15 +185,19 @@ h2.case-tag {
     background-color: #f8f9ff;
     border-radius: 75px;
     border: solid 1px;
-    border-color: #21212150;
+    border-color: #33333350;
     transition: 0.2s;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.075);
 
     display: inline;
 }
 
+/* h3.case-name.next {
+    padding-bottom: 1rem;
+} */
+
 .case-tag.color1 {
-    background-color: #63af72;
+    background-color: #68b978;
     color: #FFF;
 }
 
@@ -203,7 +207,7 @@ h2.case-tag {
 }
 
 .case-tag.color3 {
-    background-color: #de7b97;
+    background-color: #e27594;
     color: #FFF;
 }
 
@@ -954,7 +958,7 @@ mark {
 
 .home-new div.link-btn {
     padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .section-head {
