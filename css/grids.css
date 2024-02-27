@@ -31,6 +31,25 @@
         font-size: 1.15rem;
     }
 
+    .home h1 {
+        font-weight: 500;
+        font-size: 2.25rem;
+        letter-spacing: 0.025rem;
+        text-align: center;
+        padding-bottom: 0rem;
+        /* line-height: 3rem; */
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        padding-top: 0;
+    }
+
+    .home h3 {
+        font-size: 0.85rem;
+    }
+
     p,
     li {
         font-size: 0.85rem;
@@ -162,11 +181,11 @@
         grid-column: 1 / span 2;
     }
 
-    .home h1,
+    /* .home h1,
     .home .h2-intro,
     .home .link-btn {
         text-align: left;
-    }
+    } */
 
     .navbar li {
         padding-left: 1rem;
@@ -212,6 +231,22 @@
         grid-auto-flow: row;
         gap: 1rem;
     }
+
+    .link-btn p {
+        font-size: 0.85rem;
+        letter-spacing: 0.25px;
+    }
+
+    .grid.home-new {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 5rem;
+    }
+
+    h2.case-tag {
+        font-size: 0.7rem;
+    }
 }
 
 @media (min-width: 26.5625rem) {
@@ -222,6 +257,15 @@
     .navbar li {
         padding-left: 2.5rem;
         font-size: 0.9rem;
+    }
+
+    .home h1 {
+        font-size: 3.25rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .home h2 {
+        font-size: 2.75rem;
     }
 }
 
@@ -342,6 +386,30 @@
     h2.subtitle {
         font-size: 1.1rem;
     }
+
+    .home h1 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        letter-spacing: 0.125rem;
+    }
+
+    .home h2 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .home h3 {
+        font-size: 1rem;
+    }
+
+    h2.case-tag {
+        font-size: 0.85rem;
+    }
+
+    .link-btn p {
+        font-size: 0.95rem;
+        letter-spacing: 0.25px;
+    }
 }
 
 @media (min-width: 48rem) {
@@ -353,7 +421,7 @@
     }
 
     nav.navbar {
-        padding: 1.5rem 2.5rem 2.5rem;
+        padding: 1.5rem 2.5rem 3rem;
     }
 
     .case h1 {
@@ -372,7 +440,7 @@
     }
 
     .grid.home-new {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 3rem;
@@ -443,11 +511,11 @@
         padding: 2.5rem 3rem;
     }
 
-    .home h1,
+    /* .home h1, 
     .home .h2-intro,
     .home .link-btn {
         text-align: left;
-    }
+    } */
 }
 
 @media (min-width: 56.1875rem) {
@@ -459,15 +527,15 @@
 
 @media (min-width: 65rem) {
 
-    .home h1,
+    /* .home h1,
     .home h2 {
         max-width: 100%;
         line-height: 2.5rem;
-    }
+    } */
 
     .home h2 {
-        line-height: 1.5rem;
-        max-width: 90%;
+        /* line-height: 1.5rem; */
+        /* max-width: 90%; */
     }
 
     .final-design,
@@ -492,6 +560,10 @@
 
     .item1 {
         grid-column: 1 / span 1;
+    }
+
+    .home h3 {
+        font-size: 1.15rem;
     }
 }
 
@@ -519,6 +591,10 @@
         margin: auto;
         padding-left: 2rem;
     }
+
+    /* .home h3 {
+        font-size: 1rem;
+    } */
 }
 
 @media (min-width: 92.5rem) {

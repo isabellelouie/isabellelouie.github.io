@@ -12,6 +12,17 @@ body {
     letter-spacing: 0.0125rem;
 }
 
+.dotted {
+    --dot-bg: white;
+    --dot-color: #dddddda2;
+    --dot-size: 1.75px;
+    --dot-space: 24px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+}
+
 .hero {
     box-shadow: none;
 }
@@ -35,6 +46,7 @@ h1 {
 
 #work h1 {
     padding-top: 5rem;
+    font-weight: 500;
 }
 
 .case h1 {
@@ -53,15 +65,39 @@ h2 {
     font-weight: 500;
 }
 
-.home h2 {
-    font-weight: 390;
+.home h1 {
+    font-weight: 500;
+    font-size: 4.25rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    /* font-weight: 390;
     padding-top: 1rem;
     margin: 0;
-    line-height: 1.5rem;
+    line-height: 1.5rem; */
 }
 
-.h2-intro {
-    font-size: 1rem;
+.home h2 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.125rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #1b8463;
+}
+
+.home h3 {
+    font-weight: 400;
+    /* font-size: 1.125rem; */
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #333333
 }
 
 .heading {
@@ -129,12 +165,46 @@ h2.h2-md {
 
 h2.h2-sm {
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     line-height: 1.25rem;
     padding-top: 3rem;
-    /* margin-top: 2.5rem; */
     padding-bottom: 0;
-    color: #959595
+    color: #959595;
+}
+
+
+h2.case-tag {
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    padding: 0.25rem 0.85rem;
+    margin-right: 0.25rem;
+    /* color: #959595; */
+
+    /* rounded buttons */
+    background-color: #FFF;
+    border-radius: 75px;
+    border: solid 1px;
+    border-color: #21212150;
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05);
+
+    display: inline;
+}
+
+.case-tag.color1 {
+    background-color: #599064;
+    color: #FFF;
+}
+
+.case-tag.color2 {
+    background-color: #2f73a6;
+    color: #FFF;
+}
+
+.case-tag.color3 {
+    background-color: #f587a6;
+    color: #FFF;
 }
 
 .home-new .h2-sm {
@@ -183,8 +253,12 @@ h3.subheading.first {
 }
 
 h3.case-name {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+p.case-description {
+    margin-top: 0.25rem;
 }
 
 h4 {
@@ -224,18 +298,15 @@ li {
     color: #000;
 }
 
-
 .case-intro p {
     margin-top: 0;
     margin-bottom: 2rem;
 }
 
-
 .case-intro p.bold,
 .case-intro p.last {
     margin-bottom: 0;
 }
-
 
 .case-name {
     padding-bottom: 0;
@@ -284,18 +355,15 @@ h2 em {
 
 /* Navigation */
 nav.navbar {
-    background-color: #F8F9FA;
-    /* background-color: #FFF; */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    /* background-color: #F8F9FA; */
+    background-color: #fffffffc;
+
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 
-}
-
-.navbar {
     width: 100%;
-    /* margin-bottom: 2rem; */
     z-index: 10;
     font-size: 0.9rem;
 }
@@ -306,6 +374,13 @@ nav.navbar {
     text-align: left;
     display: block;
     float: left;
+
+    /* rounded buttons */
+    /* padding: 0.25rem 0.85rem;
+    border-radius: 75px;
+    border: solid 1px;
+    border-color: #21212150;
+    transition: 0.2s; */
 }
 
 a.logo:hover,
@@ -335,21 +410,23 @@ a.logo:focus {
 }
 
 .navbar a {
+    background-color: #FFF;
     color: #202020;
     text-decoration: none;
+    /* margin-bottom: 1rem; */
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
-
-    /* padding-left: 0.85rem; */
-    /* padding-right: 0.85rem;  */
-
-    /* border-radius: 75px;
+    /* rounded buttons */
+    /* padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    border-radius: 75px;
     border: solid 1px;
     border-color: #21212150;
-    transition: 0.2s; */
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05); */
 }
 
 .menu a:hover,
@@ -366,7 +443,6 @@ a.logo:focus {
     /* color: #368069; */
     text-decoration: underline;
 }
-
 
 a,
 .footer a p {
@@ -414,7 +490,6 @@ hr.longline {
 hr.longline.last {
     margin-bottom: 0;
 }
-
 
 img {
     height: auto;
@@ -465,7 +540,6 @@ figure p {
 figure img {
     border-radius: 8px;
 }
-
 
 /* Footer */
 .footer {
@@ -662,8 +736,6 @@ p.sub-p-img {
     /* margin-bottom: 3rem; */
 }
 
-
-
 .highlight {
     background-color: #FFF;
     padding: 2.4rem;
@@ -774,20 +846,25 @@ video {
     margin-bottom: 3rem;
 }
 
+.home .link-btn {
+    text-align: center;
+    padding-top: 0.5rem;
+}
 
 .link-btn {
     padding-top: 2rem;
 }
 
 .link-btn p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.25px;
 }
 
 .link-btn a {
     background-color: #FFF;
     color: #202020;
     text-decoration: none;
-    letter-spacing: 0.0156rem;
+    /* letter-spacing: 0.0156rem; */
 
     display: inline-flex;
     padding: 0.5rem 0.95rem;
@@ -804,8 +881,10 @@ video {
 .link-btn .primary-btn:hover,
 .link-btn .primary-btn:focus {
     text-decoration: none;
-    background-color: #4873a0;
-    border-color: #4873a0;
+    /* background-color: #4873a0; */
+    /* border-color: #4873a0; */
+
+    background-color: #272727;
 
     /* background-color: #4075D7; */
     /* border-color: #4075D7; */
@@ -828,7 +907,7 @@ video {
 }
 
 .link-btn .primary-btn {
-    background-color: #202020;
+    background-color: #030303;
     color: #fff;
     margin-right: 0.5rem;
     /* box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .1); */
@@ -865,7 +944,7 @@ mark {
 } */
 
 .home-pad {
-    padding-top: 9rem;
+    padding-top: 6rem;
     padding-bottom: 12.5rem;
 }
 
