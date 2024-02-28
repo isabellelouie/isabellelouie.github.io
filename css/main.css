@@ -3,7 +3,6 @@
     scroll-behavior: smooth;
 }
 
-
 /* Font Styles */
 body {
     font-family: "DM Sans", sans-serif;
@@ -732,26 +731,6 @@ p.sub-p-img {
     padding-bottom: 0;
 }
 
-/* .quote {
-    min-height: 5rem;
-    background: #368069;
-    border-radius: 8px;
-    color: #FFF;
-    padding: 1rem 3rem;
-    margin-bottom: 2rem;
-}
-
-.quote p {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-} */
-
-p.author {
-    font-size: 0.95rem;
-    line-height: normal;
-    padding-bottom: 1rem;
-}
-
 .comparison {
     margin-top: 0;
 }
@@ -890,27 +869,6 @@ mark {
     background-color: #bfdad6;
 }
 
-
-
-/* a.btn {
-    background: #368069;
-    color: #FFF;
-    border: none;
-    padding: 0.4rem 1rem;
-    margin-top: 1rem;
-    transition: background-color 0.35s;
-    border-radius: 75px;
-    font-size: 1rem;
-    cursor: pointer;
-    filter: drop-shadow(0 0 0.2rem #d2d2d2);
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: #276553;
-    text-decoration: none;
-} */
-
 .home-pad {
     padding-top: 6rem;
     padding-bottom: 12.5rem;
@@ -1000,14 +958,8 @@ h2.hobbies {
     text-decoration: none;
 }
 
-.redcircle-link:hover {
-    color: #ea404d;
-}
-
-.redcircle-link:active {
-    color: #ea404d;
-}
-
+.redcircle-link:hover,
+.redcircle-link:active,
 .redcircle-link:visited {
     color: #ea404d;
 }
