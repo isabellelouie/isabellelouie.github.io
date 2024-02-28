@@ -14,8 +14,8 @@ body {
 
 .dotted {
     --dot-bg: white;
-    --dot-color: #dddddda2;
-    --dot-size: 1.75px;
+    --dot-color: #dddddddd;
+    --dot-size: 2px;
     --dot-space: 24px;
     background:
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -378,7 +378,8 @@ nav.navbar {
 }
 
 .navbar .logo {
-    font-size: 1rem;
+    padding-top: 0.15rem;
+    font-size: 0.95rem;
     border: 0;
     text-align: left;
     display: block;
@@ -1052,24 +1053,3 @@ h2.hobbies {
 .redcircle-link:visited {
     color: #ea404d;
 }
-
-
-/* @font-face {
-    font-family: "Sequel Sans Body";
-    src: url('../fonts/sequel-sans/sequel-sans-body.eot');
-    src: url('../fonts/sequel-sans/sequel-sans-body.eot') format('embedded-opentype'),
-        url('../fonts/sequel-sans/ttf/sequel-sans-body.ttf') format('truetype');
-    font-weight: 300;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Sequel Sans Head";
-    src: url('../fonts/sequel-sans/sequel-sans-head.eot');
-    src: url('../fonts/sequel-sans/sequel-sans-head.eot') format('embedded-opentype'),
-        url('../fonts/sequel-sans/ttf/sequel-sans-head.ttf') format('truetype');
-    font-weight: 300;
-    font-weight: normal;
-    font-style: normal;
-} */

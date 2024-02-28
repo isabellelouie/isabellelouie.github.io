@@ -71,6 +71,9 @@
     <!-- Canonical -->
     <link rel=“canonical” href="https://isabellelouie.com/about">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>About – Isabelle Louie</title>
 </head>
 
@@ -91,20 +94,29 @@
     </nav>
 
 
+
     <section class="section grid bio one two">
-        <div>
+        <!-- <div>
             <picture>
                 <source media="(min-width:48rem)" srcset="img/headshot-xl.png">
-                <!-- <source media="(min-width:48rem)" srcset="img/headshot-lg.png"> -->
-                <img src="img/headshot.png" width="1972" height="1973" alt="Headshot photo of Isabelle Louie"
-                    class="headshot">
-            </picture>
+                 <source media="(min-width:48rem)" srcset="img/headshot-lg.png"> -->
+        <!-- <img src="img/headshot.png" width="1972" height="1973" alt="Headshot photo of Isabelle Louie" class="headshot">
+        </picture> -->
 
-            <!-- <picture>
+        <!-- <picture>
                 <img src="img/powerlifting.jpg" width="3005" height="3757"
                     alt="Photo of Isabelle Louie competing at the North American Powerlifting Championships"
                     class="headshot">
-            </picture> -->
+            </picture> 
+        </div> -->
+
+        <div id="slider">
+            <ul id="slideWrap">
+                <li><img src="img/headshot-lg.png" alt=""></li>
+                <li><img src="img/powerlifting.jpg" alt=""></li>
+            </ul>
+            <a id="prev" href="#">&#8810;</a>
+            <a id="next" href="#">&#8811;</a>
         </div>
 
         <div class="biography">
@@ -116,18 +128,7 @@
                 enhance everyday experiences. As a goal-oriented individual myself, I am driven by my love of
                 <strong>continual learning, embracing curiosity,</strong> and <strong>helping others achieve their
                     goals</strong>.
-            </p>
-
-            <p> I am currently in my final semester at Simon Fraser University, completing a joint major in Business and
-                Interactive Arts and Technology. I am eagerly <strong>seeking opportunities in User Experience Research
-                    for Summer 2024</strong>.
-            </p>
-
-            <p> Outside of school and work, I compete in powerlifting and represent Team Canada internationally. Most
-                recently, I earned four silver medals for Canada at the 2023 North American Powerlifting Championships
-                in the Cayman Islands!
             </p> -->
-
 
             <p> As a <strong>T-shaped individual</strong>, I specialize in mixed methods research with a wide array of
                 skills in experience design, business strategy, communications, and marketing.
@@ -150,12 +151,144 @@
                 in the Cayman Islands!
             </p>
 
-
         </div>
     </section>
 
 
-    <section class="section grid bio one two">
+
+
+
+  
+    <style>
+        
+        #slider {
+            position: relative;
+            width: 400px;
+            height: 500px;
+
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        #slider ul {
+            position: relative;
+            list-style: none;
+            height: 100%;
+            width: 10000%;
+            padding: 0;
+            margin: 0;
+            transition: all 750ms ease;
+            left: 0;
+        }
+
+        #slider ul li {
+            position: relative;
+            height: 100%;
+
+            float: left;
+        }
+
+        #slider ul li img {
+            width: 400px;
+            height: 500px;
+        }
+
+        #slider #prev,
+        #slider #next {
+            width: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 150ms ease;
+        }
+
+        #slider #prev:hover,
+        #slider #next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-shadow: 0;
+        }
+
+        #slider #prev {
+            left: 10px;
+        }
+
+        #slider #next {
+            right: 10px;
+        }
+    </style>
+
+
+    <script>
+        var responsiveSlider = function () {
+            var slider = document.getElementById("slider");
+            var sliderWidth = slider.offsetWidth;
+            var slideList = document.getElementById("slideWrap");
+            var count = 1;
+            var items = slideList.querySelectorAll("li").length;
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+
+            window.addEventListener('resize', function () {
+                sliderWidth = slider.offsetWidth;
+            });
+
+            var prevSlide = function () {
+                if (count > 1) {
+                    count = count - 2;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+                else if (count = 1) {
+                    count = items - 1;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+            };
+
+            var nextSlide = function () {
+                if (count < items) {
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+                else if (count = items) {
+                    slideList.style.left = "0px";
+                    count = 1;
+                }
+            };
+
+            next.addEventListener("click", function () {
+                nextSlide();
+            });
+
+            prev.addEventListener("click", function () {
+                prevSlide();
+            });
+
+            setInterval(function () {
+                nextSlide()
+            }, 5000);
+
+        };
+
+        window.onload = function () {
+            responsiveSlider();
+        }
+    </script>
+
+
+
+
+
+
+
+    <!-- <section class="section grid bio one two">
         <div class="add-pad">
             <picture>
                 <img src="img/powerlifting.jpg" width="3005" height="3757"
@@ -187,7 +320,7 @@
                     target="_blank">Backstreet Boys</a>.
             </p>
         </div>
-    </section>
+    </section> -->
 
 
 
