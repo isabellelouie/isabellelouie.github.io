@@ -22,9 +22,9 @@ body {
         var(--dot-color);
 }
 
-.hero {
+/* .hero {
     box-shadow: none;
-}
+} */
 
 h1 {
     font-weight: 400;
