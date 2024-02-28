@@ -439,21 +439,6 @@ a.logo:focus {
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05); */
 }
 
-.menu a:hover,
-.menu a:focus {
-    /* text-decoration: none;
-    color: #368069; */
-    /* text-decoration: underline; */
-
-    /* color: #3375E0;  */
-    /* background-color: #21212115; */
-}
-
-.navbar .nav-active {
-    /* color: #368069; */
-    text-decoration: underline;
-}
-
 a,
 .footer a p {
     /* color: #368069; */
@@ -574,33 +559,6 @@ figure img {
 .footer p {
     font-size: 0.75rem;
     display: inline;
-}
-
-/* About Page */
-.biography {
-    padding: 0 3rem;
-}
-
-.biography h1 {
-    padding-bottom: 0.75rem;
-}
-
-.biography h2 {
-    padding-top: 1rem;
-    font-size: 1.25rem;
-}
-
-.biography p {
-    margin: 1.25rem 0;
-    line-height: 1.5rem;
-}
-
-.biography a p {
-    margin: 0rem;
-}
-
-.biography .link-btn {
-    padding-top: 0;
 }
 
 .intro-item {
