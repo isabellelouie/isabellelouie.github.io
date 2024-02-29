@@ -13,7 +13,7 @@ body {
 
 .dotted {
     --dot-bg: white;
-    --dot-color: #dddddddd;
+    --dot-color: #dddddd95;
     --dot-size: 2px;
     --dot-space: 24px;
     background:
