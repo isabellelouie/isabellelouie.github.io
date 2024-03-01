@@ -62,7 +62,7 @@
 
 #slider #prev,
 #slider #next {
-    opacity: 0;
+    /* opacity: 0; */
     width: 50px;
     line-height: 50px;
     border-radius: 50%;
