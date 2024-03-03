@@ -13,7 +13,7 @@ body {
 
 .dotted {
     --dot-bg: white;
-    --dot-color: #dddddd95;
+    --dot-color: #dddddda6;
     --dot-size: 2px;
     --dot-space: 24px;
     background:
@@ -78,7 +78,7 @@ h2 {
 
 .home h2 {
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
