@@ -191,6 +191,25 @@ h2.case-tag {
     display: inline;
 }
 
+.home h2.case-tag {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    padding: 0.25rem 0.85rem;
+    margin-right: 0.25rem;
+    /* color: #959595; */
+
+    /* rounded buttons */
+    background-color: #f8f9ff;
+    border-radius: 75px;
+    border: solid 1px;
+    border-color: #33333350;
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.075);
+
+    display: inline;
+}
+
 /* h3.case-name.next {
     padding-bottom: 1rem;
 } */
@@ -332,6 +351,8 @@ li {
 h3.insights {
     margin-top: 0.25rem;
     padding-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .no-pad {
@@ -704,18 +725,15 @@ p.sub-p-img {
 }
 
 .highlight {
-    background-color: #FFF;
-    padding: 2.4rem;
+    /* background-color: #FFF; */
+    padding: 2.25rem;
     margin-top: 2rem;
-
+    background-color: rgba(239, 251, 240, 0.737);
     border-radius: 8px;
-    border: solid 1px;
-    border-color: #21212150;
-    filter: drop-shadow(0 0 0.2rem #d2d2d2);
-}
-
-.highlight.shaded {
-    background-color: #F8F9FA;
+    
+    /* border: solid 1px;
+    border-color: #21212150;*/
+    /* filter: drop-shadow(0 0 0.1rem #d2d2d2);  */
 }
 
 .highlight.last {
