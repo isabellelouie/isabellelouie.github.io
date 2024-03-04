@@ -11,16 +11,16 @@ body {
     letter-spacing: 0.0125rem;
 }
 
-.dotted {
+/* .dotted {
     --dot-bg: white;
     --dot-color: #dddddda6;
     --dot-size: 2px;
-    --dot-space: 24px;
+    --dot-space: 28px;
     background:
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         var(--dot-color);
-}
+} */
 
 /* .hero {
     box-shadow: none;
@@ -64,6 +64,17 @@ h2 {
     font-weight: 500;
 }
 
+@media (min-width: 1024px) {
+    .lg-circle {
+        display: block;
+        position: absolute;
+        top: 18em;
+        right: 0;
+        z-index: -100;
+    }
+}
+
+
 .home h1 {
     font-weight: 500;
     font-size: 4.25rem;
@@ -75,6 +86,7 @@ h2 {
     margin: 0;
     line-height: 1.5rem; */
 }
+
 
 .home h2 {
     font-weight: 500;
@@ -397,13 +409,47 @@ nav.navbar {
     font-size: 0.9rem;
 }
 
+.arrow {
+    text-align: center;
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.logo .sm-circle {
+    margin-right: 0.75rem;
+}
+
 .navbar .logo {
     padding-top: 0.15rem;
     font-size: 0.95rem;
     border: 0;
     text-align: left;
-    display: block;
+    /* display: block; */
     float: left;
+
+    display: inline;
+    position: relative;
+    vertical-align: middle;
 
     /* rounded buttons */
     /* padding: 0.25rem 0.85rem;
@@ -424,6 +470,7 @@ a.logo:focus {
 }
 
 .navbar .menu {
+    padding-top: 0.25rem;
     float: right;
     position: relative;
 }
@@ -730,7 +777,7 @@ p.sub-p-img {
     margin-top: 2rem;
     background-color: rgba(239, 251, 240, 0.737);
     border-radius: 8px;
-    
+
     /* border: solid 1px;
     border-color: #21212150;*/
     /* filter: drop-shadow(0 0 0.1rem #d2d2d2);  */
@@ -889,7 +936,7 @@ mark {
 
 .home-pad {
     padding-top: 5rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 7.5rem;
 }
 
 .home-new {
