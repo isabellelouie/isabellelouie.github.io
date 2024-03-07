@@ -296,6 +296,10 @@ h3.case-name {
     margin-bottom: 0;
 }
 
+.case-name a{
+    text-decoration: none;
+}
+
 p.case-description {
     margin-top: 0.25rem;
 }
@@ -418,6 +422,7 @@ nav.navbar {
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -1028,3 +1033,9 @@ h2.hobbies {
 .redcircle-link:visited {
     color: #ea404d;
 }
+
+/* .floating-menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+} */
