@@ -5,7 +5,7 @@
 
 /* Font Styles */
 body {
-    font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", Helvetica, sans-serif;
     font-style: normal;
     background-color: #FFF;
     letter-spacing: 0.0125rem;
