@@ -34,7 +34,8 @@
     .home h1 {
         font-weight: 500;
         font-size: 3rem;
-        letter-spacing: 0.025rem;
+        /* letter-spacing: 0.025rem; */
+        letter-spacing: 0.1%;
         text-align: center;
         padding-bottom: 0rem;
     }
@@ -389,7 +390,8 @@
     .home h1 {
         font-size: 3.5rem;
         padding-bottom: 1rem;
-        letter-spacing: 0.125rem;
+        letter-spacing: 0.1rem;
+        /* letter-spacing: 0.125rem; */
     }
 
     .home h2 {
