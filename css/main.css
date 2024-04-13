@@ -45,7 +45,7 @@ h1 {
 }
 
 #work h1 {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     font-weight: 500;
 }
 
@@ -75,17 +75,18 @@ h2 {
     }
 }
 
+.home p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 
 .home h1 {
     font-weight: 500;
-    font-size: 4.25rem;
-    letter-spacing: 0.15rem;
-    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: -0.1%;
+    text-align: left;
     padding-bottom: 1rem;
-    /* font-weight: 390;
     padding-top: 1rem;
-    margin: 0;
-    line-height: 1.5rem; */
 }
 
 
@@ -338,7 +339,7 @@ li {
 }
 
 .bold {
-    font-weight: 500;
+    font-weight: 550;
     color: #000;
 }
 
@@ -937,8 +938,8 @@ mark {
 }
 
 .home-pad {
-    padding-top: 5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .home-new {
@@ -994,8 +995,8 @@ p.float-left {
 }
 
 h2.location {
-    margin-bottom: 2rem;
-    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 h2.hobbies {

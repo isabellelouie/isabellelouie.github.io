@@ -33,11 +33,11 @@
 
     .home h1 {
         font-weight: 500;
-        font-size: 3rem;
-        /* letter-spacing: 0.025rem; */
-        letter-spacing: 0.1%;
-        text-align: center;
-        padding-bottom: 0rem;
+        font-size: 2.15rem;
+        letter-spacing: -0.1%;
+        text-align: left;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .home h2 {
@@ -60,7 +60,7 @@
     }
 
     .section {
-        margin: 0 1rem;
+        margin: 2rem 1rem;
     }
 
     .grid.bio.one {
@@ -181,12 +181,6 @@
         grid-column: 1 / span 2;
     }
 
-    /* .home h1,
-    .home .h2-intro,
-    .home .link-btn {
-        text-align: left;
-    } */
-
     .navbar li {
         padding-left: 1rem;
         font-size: 0.8rem;
@@ -257,11 +251,6 @@
     .navbar li {
         padding-left: 2.5rem;
         font-size: 0.9rem;
-    }
-
-    .home h1 {
-        font-size: 3.25rem;
-        padding-bottom: 0.75rem;
     }
 
     .home h2 {
@@ -388,10 +377,7 @@
     }
 
     .home h1 {
-        font-size: 3.5rem;
-        padding-bottom: 1rem;
-        letter-spacing: 0.1rem;
-        /* letter-spacing: 0.125rem; */
+        font-size: 2.15rem;
     }
 
     .home h2 {
@@ -512,14 +498,11 @@
         padding: 2.5rem 3rem;
     }
 
-    /* .home h1, 
-    .home .h2-intro,
-    .home .link-btn {
-        text-align: left;
-    } */
 
     .home h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        /* max-width: 60%; */
+        line-height: 1.25;
     }
 
     .home h2 {
@@ -541,11 +524,11 @@
     }
 
     .section {
-        margin: 4rem 7.5rem;
+        margin: 4rem 12.5rem;
     }
 
     .grey {
-        padding: 2.5rem 7.5rem;
+        padding: 2.5rem 12.5rem;
     }
 
     .grid.case-body.three {
