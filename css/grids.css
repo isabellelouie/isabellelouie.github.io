@@ -3,6 +3,10 @@
 }
 
 @media (min-width: 0) {
+    .home p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
     h1,
     h2.h2-xl {
@@ -32,8 +36,8 @@
     }
 
     .home h1 {
-        font-weight: 500;
-        font-size: 2.15rem;
+        font-weight: 450;
+        font-size: 1.9rem;
         letter-spacing: -0.1%;
         text-align: left;
         padding-bottom: 1rem;
@@ -376,10 +380,6 @@
         font-size: 1.1rem;
     }
 
-    .home h1 {
-        font-size: 2.15rem;
-    }
-
     .home h2 {
         font-size: 3rem;
         line-height: 2.75rem;
@@ -400,6 +400,14 @@
 }
 
 @media (min-width: 48rem) {
+    .home p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .home h1 {
+        font-size: 2.15rem;
+    }
 
     h1,
     h2.h2-xl {
