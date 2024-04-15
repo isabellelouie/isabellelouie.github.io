@@ -44,6 +44,14 @@
         padding-top: 1rem;
     }
 
+    .biography h1 {
+        font-size: 1.9rem;
+        letter-spacing: -0.1%;
+        text-align: left;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
     .home h2 {
         font-size: 2.25rem;
         padding-top: 0;
@@ -405,7 +413,8 @@
         font-weight: 300;
     }
 
-    .home h1 {
+    .home h1,
+    .biography h1 {
         font-size: 2.15rem;
     }
 
@@ -507,7 +516,8 @@
     }
 
 
-    .home h1 {
+    .home h1,
+    .biography h1 {
         font-size: 2.5rem;
         /* max-width: 60%; */
         line-height: 1.25;
