@@ -45,8 +45,12 @@ h1 {
 }
 
 #work h1 {
-    padding-top: 2.5rem;
+    padding-top: 4.1rem;
     font-weight: 500;
+}
+
+#home-line {
+    margin-top: 0.5rem;
 }
 
 .case h1 {
@@ -992,16 +996,6 @@ p.float-right,
 p.float-left {
     margin-top: 0;
     /* padding-bottom: 2rem; */
-}
-
-h2.location {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-
-h2.hobbies {
-    /* padding-top: 7rem; */
-    font-size: 1.05rem;
 }
 
 /* .fade {
