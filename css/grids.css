@@ -589,11 +589,11 @@
 
 @media (min-width: 92.5rem) {
     .grey {
-        padding: 2.5rem 15rem;
+        padding: 2.5rem 12.5rem;
     }
 
     .section {
-        margin: 4rem 15rem;
+        margin: 4rem 12.5rem;
     }
 
     .biography p {
@@ -608,7 +608,7 @@
     }
 }
 
-@media (min-width: 105rem) {
+@media (min-width: 115rem) {
     .grey {
         padding: 2.5rem 22.5rem;
     }
