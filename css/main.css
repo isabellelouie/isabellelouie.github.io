@@ -729,7 +729,7 @@ p.sub-p-img {
     display: none;
     position: fixed;
     z-index: 10;
-    padding-top: 7.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 5rem;
     left: 0;
     top: 0;
@@ -1050,6 +1050,56 @@ p.float-left {
 }
 
 .card:hover.inactive,
-.card:focus.inactive{
+.card:focus.inactive {
     transform: scale(1);
+}
+
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #fff;
+    color: #1b8463;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    border-style: solid none none;
+    border-width: 1.5px;
+    border-color: #20202025;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: rgb(232, 251, 234, 0.737);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible:after {
+    /* Unicode character for "plus" sign (+) */
+    content: '\02795';
+
+    color: white;
+    float: right;
+    vertical-align: center;
+}
+
+.active:after {
+    /* Unicode character for "minus" sign (-) */
+    content: "\2796";
 }
