@@ -187,6 +187,7 @@ h2.h2-sm {
     padding-top: 3rem;
     padding-bottom: 0;
     color: #959595;
+    /* color: #1e538b */
 }
 
 
@@ -259,6 +260,7 @@ h2.case-tag {
 .h2-sm.issue {
     margin-top: 0;
     padding-top: 0.5rem;
+    color:#556b82;
 }
 
 .h2-sm.sub-in {
@@ -782,7 +784,8 @@ p.sub-p-img {
     /* background-color: #FFF; */
     padding: 2.25rem;
     margin-top: 2rem;
-    background-color: rgba(239, 251, 240, 0.737);
+    /* background-color: rgba(239, 251, 240, 0.737); */
+    background-color: #f5f6f7;
     border-radius: 8px;
 
     /* border: solid 1px;
