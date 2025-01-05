@@ -472,6 +472,10 @@
         padding: 0 3rem;
     }
 
+    .biography.right-pad {
+        padding: 0 3rem 0 0;
+    }
+
     .section {
         margin: 4rem 3rem;
     }
