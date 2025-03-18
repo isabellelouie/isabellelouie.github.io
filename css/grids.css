@@ -571,8 +571,8 @@
     .grid.case-body.two,
     .grid.case-body.none,
     .section.case {
-        padding-left: 12.5rem;
-        padding-right: 12.5rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
 
     .grid.case-body.four {
