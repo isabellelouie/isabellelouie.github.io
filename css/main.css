@@ -411,7 +411,7 @@ nav.navbar {
     /* background-color: #F8F9FA; */
     background-color: #fffffffc;
 
-    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
+    /* box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.1); */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -946,7 +946,7 @@ mark {
 
 .home-pad {
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }
 
 .home-new {
