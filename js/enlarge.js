@@ -48,3 +48,15 @@ var closeButton = document.getElementsByClassName("close")[0];
 closeButton.onclick = function () {
   modal.style.display = "none";
 }
+
+// Close the modal when the Esc key is pressed
+document.addEventListener('keydown', function (event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+});
+
+// When the 'X' button is clicked, the modal closes 
+closeButton.onclick = function () {
+  modal.style.display = "none";
+};
