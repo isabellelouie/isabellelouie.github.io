@@ -1,4 +1,4 @@
-# Isabelle Louie - UX Researcher and Designer from Vancouver, B.C.
+# Isabelle Louie - User Experience Designer from Vancouver, B.C.
 
-👋🏻 Hi! I’m Isabelle, a junior UX researcher with a background in user experience design and marketing strategy. 
-Welcome to my portfolio: https://isabellelouie.com
+👋🏻 Hi! I’m Isabelle, a UX Designer with a background in design systems, communications, and marketing strategy.
+Welcome to my portfolio: https://isabellelouie.com 
