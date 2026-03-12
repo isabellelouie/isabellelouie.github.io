@@ -63,7 +63,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
-    <title>SAP – Isabelle Louie</title>
+    <title>SAP Activity Center – Isabelle Louie</title>
 </head>
 
 <body>
@@ -100,9 +100,9 @@
     <!-- ====================== OVERVIEW ====================== -->
     <section class="section case">
         <section>
-            <h1 class="title">SAP Data & Analytics Web UI Kit</h1>
-            <h2 class="subtitle">Building design systems to enhance cross-product consistency and
-                scalability across SAP's analytics suite.</h2>
+            <h1 class="title">SAP Activity Center</h1>
+            <h2 class="subtitle">Defining a scalable, standardized pattern for monitoring long-running background
+                processes across SAP Data & Analytics products.</h2>
 
 
             <div>
@@ -122,7 +122,7 @@
                     <p class="bold">Timeline</p>
                 </div>
                 <div>
-                    <p>August 2024 - April 2025</p>
+                    <p>February 2026 - Present</p>
                 </div>
             </div>
 
@@ -131,18 +131,18 @@
                     <p class="bold ">Team</p>
                 </div>
                 <div>
-                    <p>4 UX Design Leads & 5 Developers</p>
+                    <p>1 Product Manager, 1 Developer</p>
                 </div>
             </div>
 
-            <div class="grid case-intro one two">
+            <!-- <div class="grid case-intro one two">
                 <div>
                     <p class="bold">Toolkit</p>
                 </div>
                 <div>
-                    <p>Figma, FigJam, HTML & CSS, Jira</p>
+                    <p>Figma, HTML & CSS, Jira</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="grid case-intro one two">
                 <div>
@@ -150,11 +150,11 @@
                 </div>
                 <div>
                     <p>
-                        Designed 8 components and collaborated with 4 development teams on implementation, delivering
-                        detailed specs, accessibility annotations, and implementation reviews.
+                        Led early problem framing and cross-product discovery for background process feedback.
                         <br><br>
-                        Led internal communications to drive design system adoption, culminating in the official launch
-                        of a Web UI Kit through an organization-wide presentation.
+                        Mapped existing system activity patterns across product areas, identified misalignment with
+                        UX Consistency (UXC) notification standards, and proposed the Activity Center concept to
+                        separate long-running system operations from event-based notifications.
                     </p>
                 </div>
             </div>
@@ -165,9 +165,9 @@
                 </div>
                 <div>
                     <p>
-                        Within three weeks of launch, the DNA Web UI Kit saw rapid adoption – my Data Token component
-                        alone was implemented over 1,000 times by designers across six teams – driving consistency
-                        across multiple DNA product areas.
+                        Established a shared problem definition across product areas and aligned on a direction to
+                        separate background process monitoring from notifications — improving clarity and enabling
+                        cross-product consistency as the solution evolves.
                     </p>
                 </div>
             </div>
@@ -212,15 +212,29 @@
                 </div>
 
 
+                <!-- THE CONTEXT -->
+                <h2 class="heading first">The Context</h2>
+                <h3 class="subheading">Long-running operations need clear, consistent system feedback.</h3>
+
+                <p> In SAP Analytics Cloud (SAC), Datasphere (DSP), and Business Data Cloud (BDC), many operations run
+                    asynchronously in the background — such as importing models, exporting data, downloading packages,
+                    and bulk calendar event updates. Users still need to continue their work while these tasks run, and
+                    they need an easy way to check whether a process is running, completed successfully, or failed.
+                </p>
+
+
                 <!-- THE PROBLEM -->
                 <h2 class="heading first">The Problem</h2>
-                <h3 class="subheading">We didn't have a centralized design library for DNA Design.</h3>
+                <h3 class="subheading">Background processes ≠ notifications.</h3>
 
-                <p> At the start of the project, our team lacked a centralized design library tailored to our products'
-                    needs. While SAP provides a general SAP Web UI Kit, it serves all SAP products and doesn't fully
-                    address the specific patterns, components, and requirements of the DNA product suite. As a result,
-                    three key challenges emerged in our team's workflows:
+                <p>
+                    Today, these operations are surfaced through the <strong>Notifications</strong> panel.
+                    However, SAP products are required to follow <strong>UX Consistency (UXC)</strong> product standards
+                    that define notifications as <strong>event-based alerts</strong> with a simple lifecycle: an event
+                    triggers a notification, and the user can read, ignore, navigate, or dismiss it.
                 </p>
+
+
 
                 <div class="highlight">
                     <h2 class="h2-sm issue">CHALLENGE #1: INCREASED DESIGN EFFORT</h2>
