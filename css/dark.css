@@ -150,7 +150,7 @@ html.dark .ql-link.active {
 html.dark h2.case-tag {
     background-color: #1e1e1e;
     border-color: rgba(255, 255, 255, 0.1);
-    color: #bbb;
+    color: #ffffff;
 }
 
 html.dark h2.case-tag.company,

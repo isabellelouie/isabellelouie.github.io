@@ -183,7 +183,7 @@ h2.case-tag.company + h1.title {
 h2.case-tag.company,
 .home h2.case-tag.company {
     background:
-        linear-gradient(#f8f9ff, #f8f9ff) padding-box,
+        linear-gradient(#ffffff, #ffffff) padding-box,
         linear-gradient(135deg, #1b8463, #3375E0) border-box;
     border-color: transparent;
     color: #202020;
