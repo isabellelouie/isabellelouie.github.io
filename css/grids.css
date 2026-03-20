@@ -74,6 +74,15 @@
         margin: 2rem 1rem;
     }
 
+    .section-head {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .add-pad {
+        margin-bottom: 2rem;
+    }
+
     .grid.bio.one {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
