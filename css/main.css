@@ -1078,13 +1078,19 @@ p.float-left {
 /* ── Dark Mode Toggle ────────────────────────────────── */
 
 .theme-switch {
-    display: inline-block;
+    display: none;
     position: relative;
     height: 34px;
     width: 68px;
     vertical-align: middle;
     margin-left: 0.6rem;
     cursor: pointer;
+}
+
+@media (min-width: 38rem) {
+    .theme-switch {
+        display: inline-block;
+    }
 }
 
 .theme-switch input {

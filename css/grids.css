@@ -132,6 +132,13 @@
         padding-bottom: 1rem;
     }
 
+    .grid.two {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 1.5rem;
+    }
+
     .grid.img {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
