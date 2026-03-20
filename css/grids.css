@@ -99,10 +99,6 @@
         margin-top: 0.15rem;
     }
 
-    .pop-up {
-        width: 100%;
-    }
-
     .quote {
         padding: 1.5rem;
         margin-bottom: 2rem;
@@ -163,13 +159,13 @@
         gap: 1.5rem;
     }
 
-    .item1 {
-        grid-column: 1 / span 2;
-    }
-
     .navbar li {
         padding-left: 1rem;
         font-size: 0.8rem;
+    }
+
+    .logo-name {
+        display: none;
     }
 
     .shorts iframe {
@@ -234,6 +230,10 @@
         font-size: 0.8rem;
     }
 
+    .logo-name {
+        display: block;
+    }
+
     .navbar li {
         padding-left: 2.5rem;
         font-size: 0.9rem;
@@ -280,10 +280,6 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 2rem;
-    }
-
-    p.p-cap .comp {
-        padding-bottom: 5rem;
     }
 
     .grid.yt-short {
@@ -454,10 +450,6 @@
 
     .grey {
         padding: 2.5rem 5rem;
-    }
-
-    .item1 {
-        grid-column: 1 / span 1;
     }
 }
 

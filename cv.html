@@ -52,12 +52,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grids.css">
 
-    <!-- Import Google Font: DM Sans -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+    <!-- Import Google Font: Google Sans Flex -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap"
         rel="stylesheet">
 
     <!-- Import Favicon -->
@@ -91,10 +90,16 @@
                 <div>
                     <svg class="sm-circle" width="25" height="25" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
-                        <circle r="19.5" transform="matrix(1 0 0 -1 19.5 19.5)" fill="#1b8463"></circle>
+                        <defs>
+                            <linearGradient id="dot-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#1b8463"/>
+                                <stop offset="100%" stop-color="#3375E0"/>
+                            </linearGradient>
+                        </defs>
+                        <circle r="19.5" transform="matrix(1 0 0 -1 19.5 19.5)" fill="url(#dot-gradient)"></circle>
                     </svg>
                 </div>
-                <div>Isabelle Louie</div>
+                <div class="logo-name">Isabelle Louie</div>
             </a>
         </div>
         <div>
@@ -102,6 +107,13 @@
                 <li><a href="index.html#work">Work</a></li>
                 <li><a href="resume.html" target="_blank">Resume</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><label class="theme-switch" for="dark-checkbox" aria-label="Toggle dark mode">
+                    <input type="checkbox" id="dark-checkbox">
+                    <div class="slider round">
+                        <span class="icon moon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 50 50" fill="currentColor"><path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.678 28.238 42.251 28.198 41.854 28.321 C 36.161 30.038 29.752 28.546 25.48 24.274 C 21.208 19.999 19.716 13.59 21.434 7.898 C 21.557 7.502 21.518 7.074 21.324 6.707 C 21.131 6.34 20.799 6.065 20.402 5.942 C 20.003 5.82 19.574 5.857 19.208 6.046 C 14.016 8.738 10.293 13.498 9.074 19.139 C 7.854 24.779 9.267 30.67 12.911 35.154 C 16.554 39.638 21.987 42.229 27.773 42.216 C 33.558 42.202 38.98 39.584 42.603 35.084 C 42.966 34.607 43.08 33.984 42.909 33.408 C 43.302 32.133 43.384 30.801 43.81 29.354 Z"/></svg></span>
+                        <span class="icon sun"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 50 50" fill="currentColor"><path d="M 25 5 A 3 3 0 0 0 22 8 L 22 10 A 3 3 0 0 0 25 13 A 3 3 0 0 0 28 10 L 28 8 A 3 3 0 0 0 25 5 z M 11.5625 10.4375 A 3 3 0 0 0 9.5 11.5625 A 3 3 0 0 0 9.5 15.6875 L 10.90625 17.09375 A 3 3 0 0 0 15.03125 17.09375 A 3 3 0 0 0 15.03125 12.96875 L 13.625 11.5625 A 3 3 0 0 0 11.5625 10.4375 z M 38.4375 10.4375 A 3 3 0 0 0 36.375 11.5625 L 34.96875 12.96875 A 3 3 0 0 0 34.96875 17.09375 A 3 3 0 0 0 39.09375 17.09375 L 40.5 15.6875 A 3 3 0 0 0 40.5 11.5625 A 3 3 0 0 0 38.4375 10.4375 z M 25 16 C 20.054688 16 16 20.054688 16 25 C 16 29.945313 20.054688 34 25 34 C 29.945313 34 34 29.945313 34 25 C 34 20.054688 29.945313 16 25 16 z M 5 22 A 3 3 0 0 0 2 25 A 3 3 0 0 0 5 28 L 7 28 A 3 3 0 0 0 10 25 A 3 3 0 0 0 7 22 z M 43 22 A 3 3 0 0 0 40 25 A 3 3 0 0 0 43 28 L 45 28 A 3 3 0 0 0 48 25 A 3 3 0 0 0 45 22 z M 13.625 32.90625 L 12.21875 34.3125 A 3 3 0 0 0 12.21875 38.4375 A 3 3 0 0 0 16.34375 38.4375 L 17.75 37.03125 A 3 3 0 0 0 17.75 32.90625 A 3 3 0 0 0 13.625 32.90625 z M 36.375 32.90625 A 3 3 0 0 0 34.3125 34.03125 A 3 3 0 0 0 34.3125 38.15625 L 35.71875 39.5625 A 3 3 0 0 0 39.84375 39.5625 A 3 3 0 0 0 39.84375 35.4375 L 38.4375 34.03125 A 3 3 0 0 0 36.375 32.90625 z M 25 40 A 3 3 0 0 0 22 43 L 22 45 A 3 3 0 0 0 25 48 A 3 3 0 0 0 28 45 L 28 43 A 3 3 0 0 0 25 40 z"/></svg></span>
+                    </div>
+                </label></li>
             </ul>
         </div>
     </nav>
@@ -128,13 +140,6 @@
         </div>
         <div class="float-center">
             <p>© Isabelle Louie 2026</p>
-            <label class="theme-switch" for="dark-checkbox" aria-label="Toggle dark mode">
-                <input type="checkbox" id="dark-checkbox">
-                <div class="slider round">
-                    <span class="icon sun">&#9728;</span>
-                    <span class="icon moon">&#9790;</span>
-                </div>
-            </label>
         </div>
         <div>
             <a href="https://www.linkedin.com/in/isabellelouie/" target="_blank">

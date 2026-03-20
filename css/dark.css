@@ -3,7 +3,7 @@
 
 html.dark body {
     background-color: #161616;
-    color: #d4d4d4;
+    color: #e2e2e2;
 }
 
 html.dark nav.navbar {
@@ -45,7 +45,9 @@ html.dark .highlight {
 }
 
 html.dark .feedback-quote {
-    background-color: #1f2024;
+    background:
+        linear-gradient(#161616, #161616) padding-box,
+        linear-gradient(135deg, #1b8463, #3375E0) border-box;
 }
 
 html.dark .feedback-quote p {
@@ -164,17 +166,6 @@ html.dark .link-btn a:focus {
     color: #111111;
 }
 
-html.dark .link-btn .primary-btn {
-    background-color: #ffffff;
-    color: #111111;
-}
-
-html.dark .link-btn .primary-btn:hover,
-html.dark .link-btn .primary-btn:focus {
-    background-color: #e0e0e0;
-    color: #0d0d0d;
-}
-
 html.dark mark {
     background-color: #1b5c4e;
     color: #d4d4d4;
@@ -185,19 +176,10 @@ html.dark .slider {
     box-shadow: 0 0 0 1px #3a3a3a;
 }
 
-html.dark .theme-switch input:checked + .slider {
-    background-color: #1a2a23;
-    box-shadow: 0 0 0 1px #2d6b52;
-}
-
 /* Brighter green for legibility on dark backgrounds */
 html.dark h1 em,
 html.dark p strong,
 html.dark h3.subheading,
 html.dark .collapsible {
     color: #3ecfa0;
-}
-
-html.dark .feedback-quote {
-    border-left-color: #3ecfa0;
 }
