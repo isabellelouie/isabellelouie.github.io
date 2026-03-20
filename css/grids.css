@@ -36,7 +36,7 @@
 
     .home h1 {
         font-weight: 450;
-        font-size: 1.9rem;
+        font-size: 2.15rem;
         letter-spacing: -0.1%;
         text-align: left;
         padding-bottom: 1rem;
@@ -352,7 +352,7 @@
 
     .home h1,
     .biography h1 {
-        font-size: 2.15rem;
+        font-size: 2.5rem;
     }
 
     h1,
@@ -432,9 +432,7 @@
 
     .home h1,
     .biography h1 {
-        font-size: 2.5rem;
-        /* max-width: 60%; */
-        line-height: 1.25;
+        font-size: 3.25rem;
     }
 
     .home h2 {

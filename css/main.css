@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-weight: 400;
-    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    font-size: clamp(2rem, 4vw, 2.75rem);
     padding: 2rem 0;
     margin-bottom: 0.5rem;
     line-height: 1.2;
@@ -52,7 +52,7 @@ h2 {
 
 .home h1 {
     font-weight: 450;
-    font-size: 2.25rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
     letter-spacing: -0.1%;
     text-align: left;
     padding-bottom: 1rem;
@@ -502,10 +502,13 @@ figure img {
 }
 
 /* Footer */
-.footer {
-    margin: 0;
-    padding-top: 1rem;
+.footer.grey.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
+
+
 
 .footer.grey {
     margin: 0;

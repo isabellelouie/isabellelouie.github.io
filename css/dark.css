@@ -2,12 +2,12 @@
 /* Applied when <html class="dark"> is set by darkmode.js */
 
 html.dark body {
-    background-color: #111111;
+    background-color: #161616;
     color: #d4d4d4;
 }
 
 html.dark nav.navbar {
-    background-color: rgba(17, 17, 17, 0.88);
+    background-color: rgba(22, 22, 22, 0.88);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -37,7 +37,7 @@ html.dark .grey.recent {
 }
 
 html.dark .footer.grey {
-    background-color: #111111;
+    background-color: #161616;
 }
 
 html.dark .highlight {
@@ -123,7 +123,7 @@ html.dark .component-desc {
 }
 
 html.dark .collapsible {
-    background-color: #111111;
+    background-color: #161616;
     border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -180,8 +180,14 @@ html.dark mark {
     color: #d4d4d4;
 }
 
+html.dark .slider {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 0 1px #3a3a3a;
+}
+
 html.dark .theme-switch input:checked + .slider {
-    background-color: #111;
+    background-color: #1a2a23;
+    box-shadow: 0 0 0 1px #2d6b52;
 }
 
 /* Brighter green for legibility on dark backgrounds */
