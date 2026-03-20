@@ -230,10 +230,6 @@
         font-size: 0.8rem;
     }
 
-    .logo-name {
-        display: block;
-    }
-
     .navbar li {
         padding-left: 2.5rem;
         font-size: 0.9rem;
@@ -245,6 +241,10 @@
 }
 
 @media (min-width: 38rem) {
+
+    .logo-name {
+        display: block;
+    }
 
     h1,
     h2.h2-xl {
