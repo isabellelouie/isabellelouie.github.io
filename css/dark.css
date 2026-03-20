@@ -1,0 +1,182 @@
+/* ── Dark Mode Overrides ─────────────────────────────── */
+/* Applied when <html class="dark"> is set by darkmode.js */
+
+html.dark body {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+html.dark nav.navbar {
+    background-color: rgba(24, 24, 24, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+html.dark .navbar a {
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+html.dark a,
+html.dark .footer a p {
+    color: #c8c8c8;
+}
+
+html.dark a:hover,
+html.dark a:focus,
+html.dark .footer a p:hover,
+html.dark .footer a p:focus {
+    color: #79a3f5;
+}
+
+html.dark .grey,
+html.dark .section.case.grey,
+html.dark .grey.end,
+html.dark .grey.recent {
+    background-color: #222;
+}
+
+html.dark .footer.grey {
+    background-color: #181818;
+}
+
+html.dark .highlight {
+    background-color: #222;
+}
+
+html.dark .feedback-quote {
+    background-color: #222;
+}
+
+html.dark .feedback-quote p {
+    color: #ddd;
+}
+
+html.dark .feedback-quote cite {
+    color: #999;
+}
+
+html.dark hr {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .bold {
+    color: #e0e0e0;
+}
+
+html.dark h2.h2-md,
+html.dark h2.h2-sm {
+    color: #888;
+}
+
+html.dark h5 {
+    color: #888;
+}
+
+html.dark .heading {
+    color: #e0e0e0;
+}
+
+html.dark .card a {
+    color: #e0e0e0;
+}
+
+html.dark .card a:hover,
+html.dark .card a:focus {
+    color: #e0e0e0;
+}
+
+html.dark img {
+    filter: drop-shadow(0 0 0.1rem #0a0a0a);
+}
+
+html.dark .component-thumb {
+    background: #2a2a2a;
+}
+
+html.dark .component-name {
+    color: #e0e0e0;
+}
+
+html.dark .component-desc {
+    color: #999;
+}
+
+html.dark .newsletter-scroll {
+    border-color: #333;
+}
+
+html.dark .collapsible {
+    background-color: #181818;
+    color: #1b8463;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .collapsible.active,
+html.dark .collapsible:hover {
+    background-color: rgba(27, 132, 99, 0.1);
+}
+
+html.dark .ql-link {
+    color: #555;
+}
+
+html.dark .ql-link:hover,
+html.dark .ql-link.active {
+    color: #e0e0e0;
+}
+
+html.dark h2.case-tag {
+    background-color: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #ccc;
+}
+
+html.dark .home h2.case-tag {
+    background-color: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+html.dark .link-btn a {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+html.dark .link-btn a:hover,
+html.dark .link-btn a:focus {
+    background-color: #e0e0e0;
+    color: #181818;
+}
+
+html.dark .link-btn .primary-btn {
+    background-color: #e0e0e0;
+    color: #181818;
+}
+
+html.dark .link-btn .primary-btn:hover,
+html.dark .link-btn .primary-btn:focus {
+    background-color: #fff;
+    color: #111;
+}
+
+html.dark mark {
+    background-color: #1b5c4e;
+    color: #e0e0e0;
+}
+
+html.dark .theme-switch input:checked + .slider {
+    background-color: #111;
+}
+
+/* Brighter green for legibility on dark backgrounds */
+html.dark h1 em,
+html.dark p strong,
+html.dark h3.subheading,
+html.dark .collapsible {
+    color: #2daa84;
+}
+
+html.dark .feedback-quote {
+    border-left-color: #2daa84;
+}
