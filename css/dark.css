@@ -149,6 +149,15 @@ html.dark h2.case-tag {
     color: #bbb;
 }
 
+html.dark h2.case-tag.company,
+html.dark .home h2.case-tag.company {
+    background:
+        linear-gradient(#1e1e1e, #1e1e1e) padding-box,
+        linear-gradient(135deg, #1b8463, #3375E0) border-box;
+    border-color: transparent;
+    color: #3ecfa0;
+}
+
 html.dark .home h2.case-tag {
     background-color: #1e1e1e;
     border-color: rgba(255, 255, 255, 0.1);

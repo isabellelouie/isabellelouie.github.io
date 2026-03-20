@@ -175,6 +175,21 @@ h2.case-tag {
     padding-bottom: 1rem;
 } */
 
+h2.case-tag.company + h1.title {
+    margin-top: 1.75rem;
+}
+
+/* Company name tag — visually distinct from topic tags */
+h2.case-tag.company,
+.home h2.case-tag.company {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(135deg, #1b8463, #3375E0) border-box;
+    border-color: transparent;
+    color: #1b6b52;
+    font-weight: 600;
+}
+
 .case-tag.color1 {
     background-color: #6eb57b;
     color: #FFF;
