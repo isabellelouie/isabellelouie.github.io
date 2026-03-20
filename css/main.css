@@ -26,9 +26,6 @@ h1 {
     font-weight: 500;
 }
 
-#home-line {
-    margin-top: 0.5rem;
-}
 
 .case h1 {
     font-weight: 450;
@@ -47,15 +44,6 @@ h2 {
     font-weight: 500;
 }
 
-@media (min-width: 1024px) {
-    .lg-circle {
-        display: block;
-        position: absolute;
-        top: 18em;
-        right: 0;
-        z-index: -100;
-    }
-}
 
 .home p {
     font-size: 1.25rem;
@@ -124,9 +112,6 @@ h2.h2-lg {
     line-height: 2rem;
 }
 
-h2.h2-lg.solution {
-    margin-top: 3rem;
-}
 
 h2.h2-md {
     font-weight: 500;
@@ -220,9 +205,6 @@ h2.case-tag {
     color: #556b82;
 }
 
-.h2-sm.sub-in {
-    margin-bottom: 0;
-}
 
 h3 {
     font-weight: 500;
@@ -332,6 +314,7 @@ h3.insights {
     padding-bottom: 0;
     font-size: 0.925rem;
     font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .no-pad {
@@ -645,10 +628,6 @@ figure img {
     padding-top: 2rem;
 }
 
-p.sub-p-img {
-    padding-bottom: 0;
-}
-
 
 .pad-top {
     margin-top: 3rem;
@@ -728,7 +707,7 @@ p.sub-p-img {
 }
 
 .feedback-quote p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     color: #202020;
     margin: 0 0 0.75rem;
@@ -739,20 +718,6 @@ p.sub-p-img {
     font-size: 0.8rem;
     color: #666;
     font-style: normal;
-}
-
-/* ── Newsletter Scroll ───────────────────────────────── */
-
-.newsletter-scroll {
-    height: 520px;
-    overflow-y: scroll;
-    border-radius: 8px;
-    border: 1px solid #e8e8e8;
-}
-
-.newsletter-scroll img {
-    width: 100%;
-    display: block;
 }
 
 /* ── Component Grid ─────────────────────────────────── */
@@ -1030,12 +995,6 @@ p.float-left {
     color: #202020;
 }
 
-.card:hover.inactive,
-.card:focus.inactive {
-    transform: scale(1);
-}
-
-
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #fff;
@@ -1148,18 +1107,18 @@ p.float-left {
 }
 
 /* Dark mode: thumb slides right */
-.theme-switch input:checked + .slider {
+.theme-switch input:checked+.slider {
     background-color: #1e1e1e;
 }
 
-.theme-switch input:checked + .slider:before {
+.theme-switch input:checked+.slider:before {
     transform: translateX(28px);
 }
 
-.theme-switch input:checked + .slider .sun {
+.theme-switch input:checked+.slider .sun {
     color: #666;
 }
 
-.theme-switch input:checked + .slider .moon {
+.theme-switch input:checked+.slider .moon {
     color: #fff;
 }

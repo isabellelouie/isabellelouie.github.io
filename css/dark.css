@@ -2,24 +2,24 @@
 /* Applied when <html class="dark"> is set by darkmode.js */
 
 html.dark body {
-    background-color: #181818;
-    color: #e0e0e0;
+    background-color: #111111;
+    color: #d4d4d4;
 }
 
 html.dark nav.navbar {
-    background-color: rgba(24, 24, 24, 0.82);
+    background-color: rgba(17, 17, 17, 0.88);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
 
 html.dark .navbar a {
     background-color: transparent;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 html.dark a,
 html.dark .footer a p {
-    color: #c8c8c8;
+    color: #b8b8b8;
 }
 
 html.dark a:hover,
@@ -33,136 +33,151 @@ html.dark .grey,
 html.dark .section.case.grey,
 html.dark .grey.end,
 html.dark .grey.recent {
-    background-color: #222;
+    background-color: #161616;
 }
 
 html.dark .footer.grey {
-    background-color: #181818;
+    background-color: #111111;
 }
 
 html.dark .highlight {
-    background-color: #222;
+    background-color: #1f2024;
 }
 
 html.dark .feedback-quote {
-    background-color: #222;
+    background-color: #1f2024;
 }
 
 html.dark .feedback-quote p {
-    color: #ddd;
+    color: #c8c8c8;
 }
 
 html.dark .feedback-quote cite {
-    color: #999;
+    color: #888;
 }
 
 html.dark hr {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 html.dark .bold {
-    color: #e0e0e0;
+    color: #ffffff;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+    color: #ffffff;
+}
+
+html.dark p,
+html.dark li {
+    color: #888;
 }
 
 html.dark h2.h2-md,
 html.dark h2.h2-sm {
-    color: #888;
+    color: #666;
 }
 
 html.dark h5 {
-    color: #888;
+    color: #666;
 }
 
 html.dark .heading {
-    color: #e0e0e0;
+    color: #ffffff;
+}
+
+html.dark .subtitle {
+    color: #999;
 }
 
 html.dark .card a {
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 html.dark .card a:hover,
 html.dark .card a:focus {
-    color: #e0e0e0;
+    color: #ffffff;
+}
+
+html.dark p.case-description {
+    color: #888;
 }
 
 html.dark img {
-    filter: drop-shadow(0 0 0.1rem #0a0a0a);
+    filter: drop-shadow(0 0 0.1rem #000);
 }
 
 html.dark .component-thumb {
-    background: #2a2a2a;
+    background: #1e1e1e;
 }
 
 html.dark .component-name {
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 html.dark .component-desc {
-    color: #999;
-}
-
-html.dark .newsletter-scroll {
-    border-color: #333;
+    color: #888;
 }
 
 html.dark .collapsible {
-    background-color: #181818;
-    color: #1b8463;
-    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #111111;
+    border-color: rgba(255, 255, 255, 0.08);
 }
 
 html.dark .collapsible.active,
 html.dark .collapsible:hover {
-    background-color: rgba(27, 132, 99, 0.1);
+    background-color: rgba(62, 207, 160, 0.08);
 }
 
 html.dark .ql-link {
-    color: #555;
+    color: #444;
 }
 
 html.dark .ql-link:hover,
 html.dark .ql-link.active {
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 html.dark h2.case-tag {
-    background-color: #2a2a2a;
-    border-color: rgba(255, 255, 255, 0.12);
-    color: #ccc;
+    background-color: #1e1e1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #bbb;
 }
 
 html.dark .home h2.case-tag {
-    background-color: #2a2a2a;
-    border-color: rgba(255, 255, 255, 0.12);
+    background-color: #1e1e1e;
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 html.dark .link-btn a {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-    border-color: #555;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #444;
 }
 
 html.dark .link-btn a:hover,
 html.dark .link-btn a:focus {
-    background-color: #e0e0e0;
-    color: #181818;
+    background-color: #ffffff;
+    color: #111111;
 }
 
 html.dark .link-btn .primary-btn {
-    background-color: #e0e0e0;
-    color: #181818;
+    background-color: #ffffff;
+    color: #111111;
 }
 
 html.dark .link-btn .primary-btn:hover,
 html.dark .link-btn .primary-btn:focus {
-    background-color: #fff;
-    color: #111;
+    background-color: #e0e0e0;
+    color: #0d0d0d;
 }
 
 html.dark mark {
     background-color: #1b5c4e;
-    color: #e0e0e0;
+    color: #d4d4d4;
 }
 
 html.dark .theme-switch input:checked + .slider {
@@ -174,9 +189,9 @@ html.dark h1 em,
 html.dark p strong,
 html.dark h3.subheading,
 html.dark .collapsible {
-    color: #2daa84;
+    color: #3ecfa0;
 }
 
 html.dark .feedback-quote {
-    border-left-color: #2daa84;
+    border-left-color: #3ecfa0;
 }

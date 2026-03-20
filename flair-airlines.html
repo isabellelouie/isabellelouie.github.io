@@ -47,6 +47,7 @@
     <script src="js/enlarge.js" defer></script>
     <script src="js/autoplay.js" defer></script>
     <script src="js/collapsible.js" defer></script>
+    <script src="js/quicklinks.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Import Google Font: DM Sans -->
@@ -101,6 +102,17 @@
 
     <!-- ====================== OVERVIEW ====================== -->
     <section class="section case">
+        <nav class="quick-links" aria-label="Page sections">
+            <ul>
+                <li><a href="#overview" class="ql-link">Overview</a></li>
+                <li><a href="#introduction" class="ql-link">Introduction</a></li>
+                <li><a href="#research" class="ql-link">Research</a></li>
+                <li><a href="#solution" class="ql-link">Solution</a></li>
+                <li><a href="#validation" class="ql-link">Validation</a></li>
+                <li><a href="#conclusion" class="ql-link">Conclusion</a></li>
+            </ul>
+        </nav>
+
         <section>
             <h1 class="title">Flair Airlines: Simplifying Flight Selection</h1>
 
@@ -114,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="section-head">
+            <div class="section-head" id="overview">
                 <h2 class="h2-sm">OVERVIEW</h2>
                 <hr>
             </div>
@@ -179,7 +191,7 @@
 
 
         <!-- ====================== PROCESS ====================== -->
-        <section>
+        <section id="introduction">
             <div class="section-head">
                 <h2 class="h2-sm">INTRODUCTION</h2>
                 <hr>
@@ -220,7 +232,7 @@
 
 
         <!-- ====================== EXPLORATORY USER RESEARCH ====================== -->
-        <section>
+        <section id="research">
             <div class="section-head">
                 <h2 class="h2-sm">EXPLORATORY USER RESEARCH</h2>
                 <hr>
@@ -371,7 +383,7 @@
 
 
         <!-- ====================== DESIGN PROPOSAL ====================== -->
-        <section>
+        <section id="solution">
             <div class="section-head">
                 <h2 class="h2-sm">FINAL SOLUTION</h2>
                 <hr>
@@ -382,7 +394,7 @@
                 <p>Based on all the data I collected, I crafted a simplified flight bundle flow to improve clarity,
                     build trust, and drive conversions through intuitive design and transparent pricing.
                 </p>
-             
+
 
                 <!-- ====================== CHANGE #1 ====================== -->
                 <h2 class="h2-sm in">KEY CHANGE #1</h2>
@@ -473,7 +485,7 @@
 
 
         <!-- ====================== VALIDATION ====================== -->
-        <section>
+        <section id="validation">
             <div class="section-head">
                 <h2 class="h2-sm">FUTURE VALIDATION</h2>
                 <hr>
@@ -501,7 +513,7 @@
 
 
         <!-- ====================== REFLECTION ====================== -->
-        <section>
+        <section id="conclusion">
             <div>
                 <div class="section-head">
                     <h2 class="h2-sm">CONCLUSION</h2>
@@ -552,12 +564,14 @@
                         </div>
 
                         <div>
-                    <div>
-                    <h2 class="case-tag">DESIGN SYSTEMS</h2>
-                    <h2 class="case-tag">SHIPPED 2025</h2>
-                    <h3 class="case-name">SAP: Data & Analytics Web UI Kit</h3>
-                    <p class="case-description">Designing a unified UI kit to improve consistency and accessibility across SAP's analytics products.</p>
-                </div>
+                            <div>
+                                <h2 class="case-tag">DESIGN SYSTEMS</h2>
+                                <h2 class="case-tag">SHIPPED 2025</h2>
+                                <h3 class="case-name">SAP: Data & Analytics Web UI Kit</h3>
+                                <p class="case-description">Designing a unified UI kit to improve consistency and
+                                    accessibility across SAP's analytics products.</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
 
@@ -574,12 +588,14 @@
                         </div>
 
                         <div>
-                    <div>
-                    <h2 class="case-tag">UX RESEARCH</h2>
-                    <h2 class="case-tag">SHIPPED 2024</h2>
-                    <h3 class="case-name">One Iota: Training Library</h3>
-                    <p class="case-description">Equipping golfers with personalized training through data analysis and actionable insights.</p>
-                </div>
+                            <div>
+                                <h2 class="case-tag">UX RESEARCH</h2>
+                                <h2 class="case-tag">SHIPPED 2024</h2>
+                                <h3 class="case-name">One Iota: Training Library</h3>
+                                <p class="case-description">Equipping golfers with personalized training through data
+                                    analysis and actionable insights.</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -590,7 +606,11 @@
 
 
 
-        <!-- ====================== FOOTER ====================== -->
+    </section>
+
+
+
+    <!-- ====================== FOOTER ====================== -->
     <div class="footer grey grid">
         <div>
             <a href="https://github.com/isabellelouie/isabellelouie.github.io" target="_blank">
@@ -600,13 +620,13 @@
         <div class="float-center">
             <p>© Isabelle Louie 2026</p>
             <label class="theme-switch" for="dark-checkbox" aria-label="Toggle dark mode">
-                        <input type="checkbox" id="dark-checkbox">
-                        <div class="slider round">
-                            <span class="icon sun">&#9728;</span>
-                            <span class="icon moon">&#9790;</span>
-                        </div>
-                    </label>
+                <input type="checkbox" id="dark-checkbox">
+                <div class="slider round">
+                    <span class="icon sun">&#9728;</span>
+                    <span class="icon moon">&#9790;</span>
                 </div>
+            </label>
+        </div>
         <div>
             <a href="https://www.linkedin.com/in/isabellelouie/" target="_blank">
                 <p class="float-right">LinkedIn</p>
@@ -616,8 +636,6 @@
             </a>
         </div>
     </div>
-
-    </section>
 
 </body>
 

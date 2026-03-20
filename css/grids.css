@@ -83,12 +83,6 @@
         margin-bottom: 2rem;
     }
 
-    .grid.bio.one {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-    }
-
     .section.bio {
         margin-top: 2rem;
     }
@@ -97,22 +91,8 @@
         padding: 0;
     }
 
-    .grid.case-body.one {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        gap: 1rem;
-    }
-
     .project-details {
         padding-bottom: 1.5rem;
-    }
-
-    .grid.case.one {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        margin-top: 5rem;
     }
 
     .case-body h3 {
@@ -135,12 +115,6 @@
         margin-bottom: 0;
     }
 
-    p.author {
-        font-size: 0.75rem;
-        line-height: normal;
-        padding-bottom: 1rem;
-    }
-
     .grid.two {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -158,15 +132,6 @@
     .p-cap.comp {
         padding-bottom: 0;
         margin-bottom: 0;
-    }
-
-    .final-design {
-        margin-top: 5rem;
-    }
-
-
-    .final-design a {
-        font-size: 0.85rem;
     }
 
     .grid.case-intro.one {
@@ -189,12 +154,6 @@
 
     .home-new h4 {
         padding-top: 0;
-    }
-
-    .grid.footer {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
     }
 
     .grid.case-body.one {
@@ -309,38 +268,6 @@
         padding-bottom: 0;
     }
 
-    .grid.case.two {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        gap: 5rem;
-        margin-top: 5rem;
-    }
-
-    h2.h2-sm {
-        margin-top: 0.75rem;
-    }
-
-    .pop-up {
-        width: 80%;
-    }
-
-    .quote {
-        padding: 1rem 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .quote p {
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    p.author {
-        font-size: 0.95rem;
-    }
-
     .grid.two {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -357,11 +284,6 @@
 
     p.p-cap .comp {
         padding-bottom: 5rem;
-    }
-
-    .final-design,
-    .prototype {
-        margin-top: 6.5rem;
     }
 
     .grid.yt-short {
@@ -496,38 +418,11 @@
         margin: 4rem 3rem;
     }
 
-    .grid.case-body.two {
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        gap: 1.5rem;
-    }
-
-    .grid.case-body.none {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-    }
-
-    .grid.case-body.four,
-    .grid.case-body.three,
-    .grid.case-body.two,
-    .grid.case-body.none,
-    .section.case {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
     .grid.case-intro.two {
         grid-template-columns: 1fr 2.5fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 3rem;
-    }
-
-
-    p.p-enlarge {
-        padding-bottom: 7.5rem;
     }
 
     .grey {
@@ -555,24 +450,12 @@
 
 @media (min-width: 65rem) {
 
-    .final-design,
-    .prototype {
-        margin-top: 5rem;
-    }
-
     .section {
         margin: 4rem 5rem;
     }
 
     .grey {
         padding: 2.5rem 5rem;
-    }
-
-    .grid.case-body.three {
-        grid-template-columns: 1fr 2fr 3fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        gap: 1.5rem;
     }
 
     .item1 {
@@ -582,20 +465,9 @@
 
 @media (min-width: 77rem) {
 
-    .grid.case-body.four,
-    .grid.case-body.three,
-    .grid.case-body.two,
-    .grid.case-body.none,
     .section.case {
         padding-left: 8rem;
         padding-right: 8rem;
-    }
-
-    .grid.case-body.four {
-        grid-template-columns: 2fr 2fr 4fr 1fr;
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        gap: 1.5rem;
     }
 
     div.embed-post {
