@@ -740,7 +740,7 @@ figure video {
     margin: 2rem 0 0;
     padding: 1.75rem 2rem;
     background:
-        linear-gradient(#f5f6f7, #f5f6f7) padding-box,
+        linear-gradient(#ffffff, #ffffff) padding-box,
         linear-gradient(135deg, #1b8463, #3375E0) border-box;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
