@@ -1,8 +1,7 @@
 $("video").each(function () {
-    $(this).prop({
-        controls: true,
-        controlslist: "nodownload"
-    });
+    if (this.hasAttribute("controls")) {
+        $(this).prop("controlslist", "nodownload");
+    }
     const observer = new window.IntersectionObserver(
         ([entry]) => {
             if (entry.isIntersecting) {
