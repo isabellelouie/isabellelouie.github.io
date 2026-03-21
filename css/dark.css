@@ -1,6 +1,37 @@
 /* ── Dark Mode Overrides ─────────────────────────────── */
 /* Applied when <html class="dark"> is set by darkmode.js */
 
+/* Video light/dark switching — both videos play simultaneously, opacity crossfade */
+figure:has(.dark-mode-video) {
+    display: grid;
+}
+figure:has(.dark-mode-video) .light-mode-video,
+figure:has(.dark-mode-video) .dark-mode-video {
+    grid-area: 1 / 1;
+}
+.dark-mode-video {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+html.dark .dark-mode-video { opacity: 1; }
+
+/* Image light/dark switching — same grid-stack + crossfade */
+figure:has(.dark-mode-img),
+div:has(> .dark-mode-img) {
+    display: grid;
+}
+figure:has(.dark-mode-img) .light-mode-img,
+figure:has(.dark-mode-img) .dark-mode-img,
+div:has(> .dark-mode-img) .light-mode-img,
+div:has(> .dark-mode-img) .dark-mode-img {
+    grid-area: 1 / 1;
+}
+.dark-mode-img {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+html.dark .dark-mode-img { opacity: 1; }
+
 html.dark body {
     background-color: #161616;
     color: #e2e2e2;
@@ -78,7 +109,6 @@ html.dark li {
     color: #888;
 }
 
-html.dark h2.h2-md,
 html.dark h2.h2-sm {
     color: #666;
 }
@@ -109,23 +139,11 @@ html.dark p.case-description {
 }
 
 html.dark img {
-    filter: drop-shadow(0 0 0.1rem #000);
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }
 
 html.dark figure video {
-    filter: drop-shadow(0 0 0.1rem #000);
-}
-
-html.dark .component-thumb {
-    background: #1e1e1e;
-}
-
-html.dark .component-name {
-    color: #ffffff;
-}
-
-html.dark .component-desc {
-    color: #888;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }
 
 html.dark .collapsible {
