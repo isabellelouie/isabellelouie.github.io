@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.getElementById('dark-checkbox');
     if (!checkbox) return;
 
-    // Checkbox checked = light mode now
+    // Checkbox checked = light mode
     checkbox.checked = !document.documentElement.classList.contains('dark');
 
     checkbox.addEventListener('change', function () {
