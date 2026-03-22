@@ -254,7 +254,7 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">165+ analytics designers with no shared design library.</h2>
+            <h2 class="heading first">165+ analytics designers with no shared design library</h2>
             <p>SAP's Web UI Kit covers foundational tokens and atoms, but not the DNA-specific patterns and
                 components our products actually need. This creates three challenges:</p>
 
@@ -287,10 +287,11 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">Introducing the DNA Web UI Kit</h2>
+            <h2 class="heading first">Introducing the DNA Web UI Kit!</h2>
             <p class="add-pad">The DNA Web UI Kit builds on SAP's existing design system to centralize custom
                 components, patterns, page
-                layouts, and guidelines. Each component page includes usage guidelines, common usage examples, visual
+                layouts, and guidelines. Each component page includes usage guidelines, common implementation examples,
+                visual
                 specs for developers, and accessibility annotations.</p>
 
             <div class="grid two">
@@ -317,7 +318,7 @@
                 <hr>
             </div>
 
-            <h2 class="heading first add-pad">I designed 11 components and patterns for the DNA Web UI Kit:</h2>
+            <h2 class="heading first add-pad">I designed 11 components and patterns for the DNA Web UI Kit</h2>
 
             <div class="component-grid">
 
@@ -385,7 +386,7 @@
                             data-light-src="img/sap/components/semantic-icon-usage-light.png" alt="Semantic Icon Usage"
                             onerror="this.style.display='none'">
                     </div>
-                    <p class="component-name">Semantic Icon Usage</p>
+                    <p class="component-name">Semantic Icons</p>
                     <p class="component-desc">Guidelines and standards for semantic icon usage.</p>
                 </div>
 
@@ -415,7 +416,7 @@
                             alt="Upload File Dialog component" onerror="this.style.display='none'">
                     </div>
                     <p class="component-name">Upload File Dialog</p>
-                    <p class="component-desc">Dialog flow for file upload interactions.</p>
+                    <p class="component-desc">Dialogs for file upload interactions.</p>
                 </div>
 
                 <div class="component-card">
@@ -439,7 +440,7 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">A deep dive into one of the kit's most complex components.</h2>
+            <h2 class="heading first">A deep dive into one of the kit's most complex components</h2>
             <p>The Data Token is one of the most frequently used elements in SAP Analytics Cloud (SAC) and Datasphere
                 (DSP). As the building block behind data visualizations — representing measures, dimensions, attributes,
                 and more — it was also one of the most complex components I worked on, needing alignment across up to 10
@@ -468,7 +469,7 @@
 
                 <br>
 
-                <h3 class="subheading">After: A consolidated proposal for SAC and DSP</h3>
+                <h3 class="subheading">After: A consolidated proposal for SAC and DSP.</h3>
                 <br>
                 <div class="add-pad">
                     <a href="img/sap/token-proposal.png" target="_blank" class="pop-up-link"><img
@@ -481,7 +482,7 @@
 
                 <br>
 
-                <h3 class="subheading">Result: An aligned design across products</h3>
+                <h3 class="subheading">Result: An aligned design across products.</h3>
                 <br>
                 <div class="add-pad">
                     <a href="img/sap/token-comparison.png" target="_blank" class="pop-up-link"><img
@@ -499,8 +500,13 @@
                 <h2 class="heading">Step 2: Building the Component</h2>
                 <h3 class="subheading">Designing for flexibility, theming, and accessibility.</h3>
                 <p>With the proposal approved by design leads, I built the Data Token in Figma, accounting for multiple
-                    variants, theming support, minimum touch targets, and keyboard navigation. I also documented usage
-                    guidelines and curated common examples to make adoption as straightforward as possible.</p>
+                    variants, theming support, minimum touch targets, and keyboard navigation.</p>
+
+                <p>I also prioritized flexibility in the component structure itself — using booleans and swappable
+                    instances so designers could adapt the token to a wide range of requirements. Leading and
+                    trailing elements each came with pre-loaded swappable instances, covering the most common
+                    configurations identified during stakeholder alignment, so designers could plug and play without
+                    building from scratch.</p>
 
                 <div class="add-pad">
                     <video aria-describedby="token-demo" width="320" height="240" controls autoplay="autoplay"
@@ -518,17 +524,21 @@
             <!-- STEP 3 -->
             <div>
                 <h2 class="heading first">Step 3: Collaborating with Development</h2>
-                <h3 class="subheading">Learning to speak the same language.</h3>
+                <h3 class="subheading">Bridging the gap between design specs and live implementation.</h3>
 
-                <p>Working across 4 development teams, I quickly realized I needed to actually understand how they were
-                    building. I dug into their CSS files, explored the UI5 Demo Kit, and became familiar with the variables
-                    and component names they were already using, so my annotations made sense in their context, not
-                    just mine.</p>
+                <p>Working across 4 development teams, I realized early on that understanding how they built was just as
+                    important as what I was designing. I dug into their CSS files, explored the UI5 Demo Kit, and became
+                    familiar with the variables and component names they were already using, so my annotations made
+                    sense in their context, not just mine.</p>
 
                 <p>I also stopped waiting until implementation to get their input. Getting a developer's eyes on
-                    specs early caught a lot of issues before they became actual problems. After implementation, I
-                    reviewed the live test server using browser inspection tools, documented inconsistencies, and gave
-                    final UX sign-off after revisions.</p>
+                    specs early caught a lot of issues before they became actual problems. We held working sessions to
+                    review how I was writing my visual specs – identifying what could be assumed versus what needed to
+                    be explicitly stated. That back-and-forth led to shared templates and handoff best practices, which
+                    we documented and added directly to the DNA Web UI Kit. After implementation, I reviewed the live
+                    test
+                    server using browser inspection tools, documented inconsistencies, and gave final UX sign-off after
+                    revisions.</p>
             </div>
 
         </section>
@@ -546,7 +556,10 @@
             <div>
                 <h2 class="heading first">Official Launch</h2>
                 <h3 class="subheading">Introducing the Web Kit to the organization.</h3>
-                <p>The DNA Web UI Kit had its official org-wide launch at the global Q2 DNA Design meeting in April 2025. I showcased our first batch of components to teams across time zones, walked through shared processes, and opened it up for questions and feedback. Within three weeks, the Data Token alone had been implemented over 1,000 times.</p>
+                <p>The DNA Web UI Kit had its official org-wide launch at the global Q2 DNA Design meeting in April
+                    2025. I showcased our first batch of components to teams across time zones, walked through shared
+                    processes, and opened it up for questions and feedback. Within three weeks, the Data Token alone had
+                    been implemented over 1,000 times.</p>
 
                 <div class="add-pad">
                     <a href="img/sap/presenting.png" target="_blank" class="pop-up-link"><img
@@ -560,7 +573,9 @@
             <div>
                 <h2 class="heading">Ongoing Strategy Development</h2>
                 <h3 class="subheading">How do we drive adoption and streamline communications?</h3>
-                <p>The kit launched with momentum, but no infrastructure to sustain it. Unifying the designs was only part of the challenge — the next step was making sure designers across the organization knew the kit existed, could find updates, and had a clear way to give feedback.</p>
+                <p>The kit launched with momentum, but no infrastructure to sustain it. Unifying the designs was only
+                    part of the challenge — the next step was making sure designers across the organization knew the kit
+                    existed, could find updates, and had a clear way to give feedback.</p>
             </div>
 
 
@@ -681,16 +696,18 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">Scaling design through systems thinking.</h2>
-            <h3 class="subheading">What this project taught me about influence, ownership, and collaboration.
+            <h2 class="heading first">Scaling design through systems thinking</h2>
+            <h3 class="subheading">What this project taught me about people, process, and ownership.
             </h3>
-            <p>This project deepened my understanding of design systems and cross-functional collaboration, especially
-                the challenge of working within legacy technical constraints across multiple development frameworks.
-                Building strong, open relationships with developers was essential: as designers, we're often
-                translators, aligning stakeholders from design, engineering, and product toward a common goal. This
-                experience solidified my interest in design systems as a long-term area of growth, and reinforced the
-                value of advocating for ideas with clear rationale while staying open to evolving them through
-                collaboration.</p>
+            <p>Building a design system is only half the work — getting an organization to actually use it is the other
+                half. Aligning 10 contributors on a single Data Token proposal, collaborating with 4 development teams
+                across different codebases, and building the infrastructure to sustain adoption across 165+ designers
+                all made that clear.</p>
+
+            <p>I also learned what it means to own something end-to-end: from the first alignment meeting to the live
+                sign-off, and from the launch presentation to the rollout strategy that followed. This experience
+                solidified my interest in design systems as a long-term area of growth, and in work that sits at the
+                intersection of people, process, and systems thinking.</p>
         </section>
 
 
@@ -746,7 +763,7 @@
 
             </div>
 
-            <hr class="longline">
+
         </div>
 
     </section>

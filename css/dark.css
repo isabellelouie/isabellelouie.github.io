@@ -20,7 +20,7 @@ html.dark .navbar a {
 
 html.dark a,
 html.dark .footer a p {
-    color: #b8b8b8;
+    color: #999;
 }
 
 html.dark a:hover,
@@ -43,6 +43,8 @@ html.dark .footer.grey {
 
 html.dark .highlight {
     background-color: #1f2024;
+    border: solid 1px rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 html.dark .feedback-quote {
@@ -60,7 +62,7 @@ html.dark .feedback-quote cite {
 }
 
 html.dark hr {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #777;
 }
 
 html.dark .bold {
@@ -76,11 +78,11 @@ html.dark h4 {
 
 html.dark p,
 html.dark li {
-    color: #888;
+    color: #999;
 }
 
 html.dark h2.h2-sm {
-    color: #666;
+    color: #777;
 }
 
 html.dark h5 {

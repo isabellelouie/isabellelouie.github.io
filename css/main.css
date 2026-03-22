@@ -8,6 +8,7 @@ body {
     font-family: "Google Sans Flex", "Google Sans", sans-serif;
     font-style: normal;
     background-color: #f9fcfc;
+    color: #202020;
     letter-spacing: 0.0125rem;
 }
 
@@ -437,7 +438,7 @@ hr {
     margin-bottom: 0;
     height: 1px;
     border: none;
-    background-color: rgba(47, 45, 43, 0.2);
+    background-color: #aaa;
 }
 
 hr.midline {
@@ -695,7 +696,7 @@ figure video {
     margin: 2rem 0 0;
     padding: 1.75rem 2rem;
     background:
-        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(#f9fcfc, #f9fcfc) padding-box,
         linear-gradient(135deg, #1b8463, #3375E0) border-box;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
