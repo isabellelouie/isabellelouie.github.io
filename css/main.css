@@ -336,31 +336,24 @@ nav.navbar {
     width: 100%;
     z-index: 10;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .logo .sm-circle {
     margin-right: 0.75rem;
+    width: 21px;
+    height: 21px;
 }
 
 .navbar .logo {
-    padding-top: 0.15rem;
     font-size: 0.95rem;
     border: 0;
     text-align: left;
-    /* display: block; */
-    float: left;
-
-    display: inline;
-    position: relative;
-    vertical-align: middle;
-
-    /* rounded buttons */
-    /* padding: 0.25rem 0.85rem;
-    border-radius: 75px;
-    border: solid 1px;
-    border-color: #21212150;
-    transition: 0.2s; */
+    display: flex;
+    align-items: center;
 }
 
 a.logo:hover,
@@ -374,9 +367,8 @@ a.logo:focus {
 }
 
 .navbar .menu {
-    padding-top: 0.25rem;
-    float: right;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
