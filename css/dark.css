@@ -198,3 +198,17 @@ html.dark h3.subheading,
 html.dark .collapsible {
     color: #3ecfa0;
 }
+
+html.dark .process-card {
+    background: #1f2024;
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .process-steps::before {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+html.dark .step-label {
+    color: #999;
+}
