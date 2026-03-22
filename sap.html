@@ -532,18 +532,18 @@
                 <h3 class="subheading">Bridging the gap between design specs and live implementation.</h3>
 
                 <p>Working across 4 development teams, I realized early on that understanding how they built was just as
-                    important as what I was designing. I dug into their CSS files, explored the UI5 Demo Kit, and became
-                    familiar with the variables and component names they were already using — so my annotations made
-                    sense in their context, not just mine.</p>
+                    important as what I was designing. I read through their CSS files, explored the UI5 Demo Kit, and
+                    became familiar with the variables and component names they were already using – so that when I
+                    annotated a spec, it mapped directly to how they'd actually implement it.</p>
 
                 <p>I also stopped waiting until implementation to get their input. Getting a developer's eyes on
                     specs early caught a lot of issues before they became actual problems. It also surfaced one I hadn't
                     anticipated: I was over-speccing. My initial annotations detailed color variables, spacing values,
-                    and text styles that were already baked into the default component. Developers
-                    interpreted the extra detail as intentional overrides and hard-coded those values, bypassing the
-                    defaults entirely.</p>
+                    and text styles that were already baked into the base component we were extending. Developers
+                    interpreted the extra detail as intentional overrides and would've hard-coded those values,
+                    bypassing the defaults entirely.</p>
 
-                <p>This was a problem – one of our core design principles was to avoid custom code
+                <p>This was a problem: one of our core design principles was to avoid custom code
                     wherever possible, to stay future-proof as SAP's theming system evolved. Based on dev feedback, I
                     updated our specifications to only call out deviations from defaults, rather than restating them.
                     That shift led to more accurate implementation and a clearer handoff process overall. After
@@ -569,7 +569,7 @@
             <div>
                 <h2 class="heading first">Official Launch</h2>
                 <h3 class="subheading">Introducing the Web Kit to the organization.</h3>
-                <p>The DNA Web UI Kit had its official org-wide launch at the global Q2 DNA Design meeting in April
+                <p>The DNA Web UI Kit had its official org-wide launch at a global DNA Design meeting in April
                     2025. I showcased our first batch of components to teams across time zones, walked through shared
                     processes, and opened it up for questions and feedback. Within three weeks, the Data Token alone had
                     been implemented over 1,000 times.</p>
@@ -587,7 +587,7 @@
                 <h2 class="heading">Ongoing Strategy Development</h2>
                 <h3 class="subheading">How do we drive adoption and streamline communications?</h3>
                 <p>The kit launched with momentum, but no infrastructure to sustain it. Unifying the designs was only
-                    part of the challenge — the next step was making sure designers across the organization knew the kit
+                    part of the challenge. The next step was making sure designers across the organization knew the kit
                     existed, could find updates, and had a clear way to ask questions and give feedback.</p>
             </div>
 
@@ -600,12 +600,12 @@
                     design systems designer to address a growing gap. Questions were already coming in from DNA Design
                     leads — Who are the points of contact for each component? What takes precedence when DNA and SAP
                     Web Kit patterns conflict? Should designers start using these components in their work, or are we
-                    still waiting on dev implementation?
+                    still waiting on dev commitment?
                     <br><br>
                     Without a central place to find answers or a structured way to receive updates, teams would start
                     working around the kit rather than with it, recreating the exact inconsistencies it was designed to
-                    prevent. We defined our strategy across three areas: a central resource hub, a structured release
-                    cadence, and dedicated communication channels.
+                    prevent. We defined our strategy across four areas: a central resource hub, a clear contribution and
+                    governance model, a structured release cadence, and dedicated communication channels.
                     <br><br>
                     The strategy was presented to the Head of Design and the DNA leadership team, then rolled out
                     to the broader design team starting Q4 2025.
@@ -622,14 +622,13 @@
                 <div class="highlight">
                     <h2 class="h2-sm issue">CONTRIBUTION & GOVERNANCE</h2>
                     <h3 class="insights">New component requests are submitted by design leads each quarter, collectively
-                        discussed, and voted on based on usage frequency and cross-product need to define the quarterly
-                        roadmap.</h3>
+                        discussed, and voted on based on usage frequency and cross-product need.</h3>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm issue">RELEASE CADENCE</h2>
                     <h3 class="insights">Bi-weekly releases for bug fixes and minor updates. Quarterly releases for new
-                        components and large-scale changes, with a roadmap defined each quarter alongside design
+                        components and large-scale changes, with a roadmap defined each quarter with design
                         stakeholders.</h3>
                 </div>
 
@@ -656,11 +655,10 @@
             <h3 class="subheading">Adoption that grew steadily... and kept growing.</h3>
             <p>Just three weeks post-launch, the Data Token alone had been used over 1,000 times by
                 designers from 6 project teams. A year later, it had accumulated over 105,000 inserts across the org,
-                making it
-                the most actively used DNA component by a significant margin. Part of that adoption came down to how the
-                component was built — the booleans and swappable instances meant designers could adapt the token to
-                almost any context without building from scratch, lowering the barrier to use. The kit itself has grown
-                steadily in usage, now adopted by 71 project teams.</p>
+                making it the most actively used DNA component by a significant margin. Part of that adoption came down
+                to how the component was built — the booleans and swappable instances meant designers could adapt the
+                token to almost any context without building from scratch, lowering the barrier to use. The kit itself
+                has grown steadily in usage, now adopted by 71 project teams.</p>
 
             <p>The strategy rollout in Q4 2025 extended that reach. The DNA Design Systems SharePoint portal received
                 379 total views from 76 unique designers in its first few months, with viewership up 19% in the
