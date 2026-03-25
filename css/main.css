@@ -1061,13 +1061,13 @@ p.float-left {
     justify-content: center;
     overflow: hidden;
     margin-bottom: 0.75rem;
+    isolation: isolate;
 }
 
 .component-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
     filter: none;
     box-shadow: none;
 }
