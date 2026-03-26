@@ -318,9 +318,11 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">I designed 11 components and patterns used across analytics workflows</h2>
-            <p>Each went through a structured process involving Product Design stakeholders, a UI Kit Designer (myself),
-                and a dedicated UI Kit Owner responsible for final quality sign-off.</p>
+            <h2 class="heading first">I designed 11 components and patterns for the DNA Web UI Kit</h2>
+            <p>Each went through a structured process involving alignment with product design stakeholders, building the
+                component and writing documentation, and completing a final quality sign-off with the UI Kit Owner.</p>
+
+            <p>Certain elements have been hidden or recreated due to NDA restrictions. </p>
 
             <div class="component-grid">
 
@@ -491,8 +493,8 @@
                 <br>
 
                 <h3 class="subheading">Result: An aligned design across products.</h3>
-                <p>Before, the spacing, color, and button styles varied across product areas. The 'after' state reflects
-                    a single unified pattern applied consistently across all three.</p>
+                <p>Before, the spacing, color, and button styles varied across products. After alignment,
+                    a single unified pattern could be applied consistently across all areas.</p>
                 <div class="add-pad">
                     <a href="img/sap/token-comparison.png" target="_blank" class="pop-up-link"><img
                             class="static-img comparison" src="img/sap/token-comparison.png" width="1920" height="1250"
@@ -507,7 +509,7 @@
             <!-- STEP 2 -->
             <div>
                 <h2 class="heading">Step 2: Building the Component</h2>
-                <h3 class="subheading">Designing for flexibility, theming, and accessibility.</h3>
+                <h3 class="subheading">Designing for accessibility and scalability.</h3>
                 <p>With the proposal approved by design leads, I built the Data Token in Figma, accounting for multiple
                     variants, theming support, minimum touch targets, and keyboard navigation.</p>
 
@@ -523,20 +525,20 @@
 
                 <br>
 
-                <h3 class="subheading">Key Design Decision: Structuring the Data Token for flexibility</h3>
+                <h3 class="subheading">Key Design Decision: Structuring the Data Token for Flexibility</h3>
                 <p>The Data Token supports many configurations: leading icons, trailing icons, status indicators,
-                    buttons, and combinations of these elements. The challenge was structuring that flexibility in Figma
+                    buttons, and combinations of these elements. The challenge was enabling that flexibility in Figma
                     without creating an unmanageable component.</p>
 
                 <div class="highlight">
                     <h2 class="h2-sm issue">OPTION A: EXHAUSTIVE VARIANT MATRIX</h2>
-                    <p>One approach was to map each token variation into the component as a separate variant.
+                    <p>One approach was to map each token configuration to a separate variant.
                         <br><br>
-                        However, the number of variants would quickly explode as configurations multiplied. This would
+                        However, the number of variants would grow rapidly as configurations multiplied. This would
                         bloat the file, slow library performance, and make the component difficult to maintain.
                         <br><br>
-                        If a needed variant didn’t exist, designers would also have to detach the component to customize
-                        it, breaking the connection to future library updates.
+                        If a required variant didn’t exist, designers would also need to detach the component to
+                        customize it, breaking the connection to future library updates.
                     </p>
                 </div>
 
@@ -544,17 +546,16 @@
                     <h2 class="h2-sm issue">OPTION B: NESTED SWAPPABLE INSTANCES (CHOSEN)</h2>
                     <p>Instead, I designed leading and trailing element containers that hold swappable nested instances.
                         <br><br>
-                        Commonly used elements appear in a dropdown menu, while designers can still use the swap
-                        instance tool
-                        for custom elements when needed.
+                        Common elements are accessible through a dropdown menu, while designers can still use Figma’s
+                        swap instance tool for custom elements when needed.
                         <br><br>
-                        This approach keeps the file lean, preserves library performance at scale, and allows the
-                        component to support new use cases without requiring designers to detach it.
+                        This structure keeps the file lightweight, preserves library performance at scale, and allows
+                        the component to support new use cases without requiring detachment.
                     </p>
                 </div>
 
-                <p>This architecture ultimately made the component flexible enough for dozens of analytics workflows
-                    while keeping the design library maintainable for the long term.</p>
+                <p>This architecture made the component flexible enough to support dozens of analytics workflows while
+                    keeping the design library maintainable long-term.</p>
             </div>
 
 
@@ -634,13 +635,13 @@
                 <div class="highlight">
                     <h2 class="h2-sm issue">CONTRIBUTION & GOVERNANCE</h2>
                     <h3 class="insights">New component requests are submitted by design leads each quarter, collectively
-                        discussed, and voted on based on usage frequency and cross-product need.</h3>
+                        discussed, and voted on based on usage frequency and cross-product requirements.</h3>
                 </div>
 
                 <div class="highlight">
                     <h2 class="h2-sm issue">RELEASE CADENCE</h2>
                     <h3 class="insights">Bi-weekly releases for bug fixes and minor updates. Quarterly releases for new
-                        components and large-scale changes, with a roadmap defined each quarter with design
+                        components and large-scale changes, with the roadmap defined each quarter alongside design
                         stakeholders.</h3>
                 </div>
 
