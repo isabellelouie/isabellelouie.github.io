@@ -119,7 +119,18 @@
 
     <!-- ====================== OVERVIEW ====================== -->
     <section class="section case">
-        <section>
+        <nav class="quick-links" aria-label="Page sections">
+            <ul>
+                <li><a href="#overview" class="ql-link">Overview</a></li>
+                <li><a href="#introduction" class="ql-link">Introduction</a></li>
+                <li><a href="#problem" class="ql-link">Problem</a></li>
+                <li><a href="#process" class="ql-link">Process</a></li>
+                <li><a href="#impact" class="ql-link">Impact</a></li>
+                <li><a href="#reflection" class="ql-link">Reflection</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
             <h1 class="title">Flair Airlines: Cross-Platform Design System</h1>
 
             <h2 class="subtitle"> Modernizing Flair Airlines' design system to support mobile-first experiences and
@@ -147,14 +158,14 @@
                 </div>
             </div>
 
-            <div class="grid case-intro one two">
+            <!-- <div class="grid case-intro one two">
                 <div>
                     <p class="bold">Toolkit</p>
                 </div>
                 <div>
                     <p>Figma, Storybook</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="grid case-intro one two">
                 <div>
@@ -182,7 +193,7 @@
 
 
         <!-- ====================== INTRODUCTION ====================== -->
-        <section>
+        <section id="introduction">
             <div class="section-head">
                 <h2 class="h2-sm">INTRODUCTION</h2>
                 <hr>
@@ -203,19 +214,16 @@
                 </div>
             </div>
 
+        </section>
 
-            <h2 class="heading">Challenges with the Previous System</h2>
-
-            <!-- </section> -->
-
-
-
-            <!-- ====================== INTRODUCTION ====================== -->
-            <!-- <section>
+        <section id="problem">
             <div class="section-head">
-                <h2 class="h2-sm">EXISTING CHALLENGES</h2>
+                <h2 class="h2-sm">THE PROBLEM</h2>
                 <hr>
-            </div> -->
+            </div>
+
+            <h2 class="heading first">Challenges with the Previous System</h2>
+
 
             <div>
                 <!-- <h2 class="heading first">Desktop-First Components</h2> -->
@@ -225,40 +233,33 @@
                     on horizontal layouts, excessive white space, and large typography that did not
                     translate well to smaller screens.
                 </p>
+
                 <p>
                     The system also used a complex colour palette, where multiple accent colours could appear within a
                     single screen, making it difficult to establish a clear visual hierarchy.
                 </p>
 
-                <div class="add-pad">
+                <p class="add-pad">
+                    When scaled to mobile, these components resulted in inefficient layouts, excessive scrolling, and
+                    reduced information density.
+                </p>
+
+
+                <div class="grid img">
                     <a href="img/flair-design-system/desktop-old-ui.png" target="_blank" class="pop-up-link">
                         <img class="static-img comparison" src="img/flair-design-system/desktop-old-ui.png" width="1920"
                             height="1250" alt="Desktop experience using the previous design system">
                     </a>
 
-                </div>
-
-                <p>
-                    When scaled to mobile, these components resulted in inefficient layouts, excessive scrolling, and
-                    reduced information density.
-                </p>
-
-                <div class="add-pad">
-                    <a href="img/flair-design-system/mobile-old-ui.png" target="_blank" class="pop-up-link"><img
-                            class="static-img comparison" src="img/flair-design-system/mobile-old-ui.png" width="1920"
-                            height="1250" alt="Mobile experience using the previous design system"></a>
-
+                    <a href="img/flair-design-system/mobile-old-ui.png" target="_blank" class="pop-up-link">
+                        <img class="static-img comparison" src="img/flair-design-system/mobile-old-ui.png" width="1920"
+                            height="1250" alt="Mobile experience using the previous design system">
+                    </a>
                 </div>
 
 
-                <!--                 
-                <p>
-                    At the same time, new platform initiatives—including a redesigned booking management and
-                    post-booking experience—required a more scalable system that could support both mobile and web
-                    interfaces.
-                </p>
 
-                <div class="add-pad">
+                <!-- <div class="add-pad">
                     <a href="img/flair-design-system/app-new-ui.png" target="_blank" class="pop-up-link"><img
                             class="static-img comparison" src="img/flair-design-system/app-new-ui.png" width="1920"
                             height="1250" alt="Current app experience using the new design system"></a>
@@ -276,59 +277,59 @@
                 <hr>
             </div>
 
-            <h2 class=”heading first”>Rebuilding from the foundation up</h2>
-            <p>Rather than patching individual components, I started with the layer below them. A component system is
-                only as consistent as the tokens it’s built on. Getting the tokens right first meant everything built on
-                top would be consistent by default.</p>
+            <h2 class="heading first">Rebuilding from the ground up (pun intended)</h2>
+            <p class="add-pad">Rather than patching individual components, I started with the layer below them. A
+                component system is only as consistent as the tokens it’s built on. Getting the tokens right first meant
+                everything built on top would be consistent by default.</p>
 
             <!-- STEP 1 -->
-            <div>
-                <h2 class=”heading”>Step 1: Token Audit and Rebuild</h2>
-                <h3 class=”subheading”>Replacing hardcoded values with a structured variable system.</h3>
-                <p>I audited the existing Figma file to identify every hardcoded color, type style, and spacing value.
-                    Many components used raw hex values instead of variables, which meant a single brand change required
-                    manually updating dozens of components.</p>
-                <p>I rebuilt the token system from scratch, aligning it to Flair’s updated brand direction: a simplified
-                    color palette with clear hierarchy, a mobile-first typography scale, and a spacing system that
-                    worked across breakpoints.</p>
 
-                <!-- INSERT TOKEN SYSTEM IMAGE -->
-                <!-- <div class=”add-pad”>
+            <h2 class="heading">Step 1: Token Audit and Rebuild</h2>
+            <h3 class="subheading">Replacing hardcoded values with a structured variable system.</h3>
+            <p>I audited the existing Figma file to identify every hardcoded color, type style, and spacing value.
+                Many components used raw hex values instead of variables, which meant a single brand change required
+                manually updating dozens of components.</p>
+            <p>I rebuilt the token system from scratch, aligning it to Flair’s updated brand direction: a simplified
+                color palette with clear hierarchy, a mobile-first typography scale, and a spacing system that
+                worked across breakpoints.</p>
+
+            <!-- INSERT TOKEN SYSTEM IMAGE -->
+            <!-- <div class=”add-pad”>
                     <a href=”img/flair-design-system/token-system.png” target=”_blank” class=”pop-up-link”>
                         <img class=”static-img comparison” src=”img/flair-design-system/token-system.png” width=”1920” height=”1250” alt=”Flair Airlines token system rebuild”>
                     </a>
                 </div> -->
 
-                <h3 class=”subheading”>Key Decision: Simplifying the Color Hierarchy</h3>
-                <p>The previous palette used multiple purple and green variations within a single screen, which
-                    flattened visual hierarchy and made interactive elements harder to identify. I restructured the
-                    color roles: dark grey as the primary UI color, green as the secondary accent, and purple reserved
-                    for highlight states only. This reduced visual noise and aligned the interface more closely with the
-                    updated brand.</p>
-            </div>
+            <h3 class="subheading">Key Decision: Simplifying the Color Hierarchy</h3>
+            <p>The previous palette used multiple purple and green variations within a single screen, which
+                flattened visual hierarchy and made interactive elements harder to identify. I restructured the
+                color roles: dark grey as the primary UI color, green as the secondary accent, and purple reserved
+                for highlight states only. This reduced visual noise and aligned the interface more closely with the
+                updated brand.</p>
+
 
             <br>
 
             <!-- STEP 2 -->
             <div>
-                <h2 class=”heading”>Step 2: Mobile-First Component Architecture</h2>
-                <h3 class=”subheading”>Designing smallest-first, then scaling up.</h3>
+                <h2 class="heading">Step 2: Mobile-First Component Architecture</h2>
+                <h3 class="subheading">Designing smallest-first, then scaling up.</h3>
                 <p>With the token system in place, I built approximately 20 core components and the full booking flow.
                     The first decision was how to approach the build.</p>
 
-                <h3 class=”subheading”>Key Design Decision: Adapt Desktop Components vs. Start from Mobile</h3>
+                <h3 class="subheading">Key Design Decision: Adapt Desktop Components vs. Start from Mobile</h3>
                 <p>The existing components were built desktop-first. The straightforward path was to adapt them by
                     adding responsive breakpoints and adjusting sizing.</p>
 
-                <div class=”highlight”>
-                    <h2 class=”h2-sm issue”>OPTION A: ADAPT DESKTOP COMPONENTS FOR MOBILE</h2>
+                <div class="highlight">
+                    <h2 class="h2-sm issue">OPTION A: ADAPT DESKTOP COMPONENTS FOR MOBILE</h2>
                     <p>Add responsive breakpoints and scale down existing components. Faster to start, but the
                         underlying assumptions (horizontal layouts, large whitespace, desktop interaction patterns) stay
                         baked into the structure.</p>
                 </div>
 
-                <div class=”highlight”>
-                    <h2 class=”h2-sm issue”>OPTION B: DESIGN MOBILE-FIRST, SCALE UP (CHOSEN)</h2>
+                <div class="highlight">
+                    <h2 class="h2-sm issue">OPTION B: DESIGN MOBILE-FIRST, SCALE UP (CHOSEN)</h2>
                     <p>Start every component from the smallest screen size, using mobile constraints as the design
                         baseline: touch targets, vertical layouts, compact spacing. Then scale up to larger breakpoints
                         from there.</p>
@@ -358,8 +359,8 @@
 
             <!-- STEP 3 -->
             <div>
-                <h2 class=”heading”>Step 3: Handoff Documentation</h2>
-                <h3 class=”subheading”>Writing specs that could stand on their own.</h3>
+                <h2 class="heading">Step 3: Handoff Documentation</h2>
+                <h3 class="subheading">Writing specs that could stand on their own.</h3>
                 <p>Developers implemented from my Figma specs into Storybook. To ensure accuracy without real-time
                     back-and-forth, I built documentation directly into the design system file: interaction behavior
                     annotations, token references, spacing specifications, and edge case notes for each component.</p>
@@ -380,34 +381,34 @@
 
 
         <!-- ====================== IMPACT ====================== -->
-        <section id=”impact”>
+        <section id="impact">
             <div class="section-head">
                 <h2 class="h2-sm">IMPACT</h2>
                 <hr>
             </div>
 
-            <h2 class=”heading first”>A foundation built to ship.</h2>
-            <h3 class=”subheading”>From token rebuild to live product.</h3>
+            <h2 class="heading first">A foundation built to ship.</h2>
+            <h3 class="subheading">From token rebuild to live product.</h3>
             <p>The rebuilt system covered approximately 20 core components and the full booking flow, all built on a
                 structured token system aligned to the updated brand. The system launched on the Flair Airlines mobile
                 app in March 2026.</p>
 
-            <div class=”highlight”>
-                <h2 class=”h2-sm issue”>~20 COMPONENTS BUILT</h2>
-                <h3 class=”insights”>Buttons, checkbox, radio button, switch, tag, accordion, card, countdown, list,
+            <div class="highlight">
+                <h2 class="h2-sm issue">~20 COMPONENTS BUILT</h2>
+                <h3 class="insights">Buttons, checkbox, radio button, switch, tag, accordion, card, countdown, list,
                     message strip, message note, tab bar, seat map, footer, content section, hero, modal, navigation,
                     and payment form fields, plus the full booking flow.</h3>
             </div>
 
-            <div class=”highlight”>
-                <h2 class=”h2-sm issue”>TOKEN SYSTEM REBUILT FROM SCRATCH</h2>
-                <h3 class=”insights”>Color, typography, and spacing tokens replaced a system of hardcoded values,
+            <div class="highlight">
+                <h2 class="h2-sm issue">TOKEN SYSTEM REBUILT FROM SCRATCH</h2>
+                <h3 class="insights">Color, typography, and spacing tokens replaced a system of hardcoded values,
                     aligning the interface to the updated brand and making future changes maintainable.</h3>
             </div>
 
-            <div class=”highlight”>
-                <h2 class=”h2-sm issue”>LAUNCHED MARCH 2026</h2>
-                <h3 class=”insights”>The updated system shipped on the Flair Airlines mobile app and continues to
+            <div class="highlight">
+                <h2 class="h2-sm issue">LAUNCHED MARCH 2026</h2>
+                <h3 class="insights">The updated system shipped on the Flair Airlines mobile app and continues to
                     support the development of new digital experiences.</h3>
             </div>
 
@@ -416,14 +417,14 @@
 
 
         <!-- ====================== REFLECTION ====================== -->
-        <section id=”reflection”>
+        <section id="reflection">
             <div class="section-head">
                 <h2 class="h2-sm">REFLECTION</h2>
                 <hr>
             </div>
 
-            <h2 class=”heading first”>What I would do differently</h2>
-            <h3 class=”subheading”>The value of early developer involvement.</h3>
+            <h2 class="heading first">What I would do differently</h2>
+            <h3 class="subheading">The value of early developer involvement.</h3>
             <p>The biggest limitation of this project was the timing of developer involvement. Implementation happened
                 after the design work was complete, which meant there was no feedback loop during the build phase to
                 catch constraints early.</p>
