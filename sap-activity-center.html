@@ -61,6 +61,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
+    <meta name="robots" content="noindex, nofollow">
     <title>SAP Activity Center – Isabelle Louie</title>
     <script src="js/darkmode.js"></script>
     <link rel="stylesheet" href="css/dark.css">
@@ -126,7 +127,7 @@
                 <li><a href="#context" class="ql-link">Context</a></li>
                 <li><a href="#problem" class="ql-link">Problem</a></li>
                 <li><a href="#solution" class="ql-link">Solution</a></li>
-                <li><a href="#decisions" class="ql-link">Key Design Decisions</a></li>
+                <li><a href="#decisions" class="ql-link">Key Decisions</a></li>
                 <li><a href="#impact" class="ql-link">Impact</a></li>
                 <li><a href="#reflection" class="ql-link">Reflection</a></li>
             </ul>
@@ -154,7 +155,7 @@
                     <p class="bold">Timeline</p>
                 </div>
                 <div>
-                    <p>January 2025 – Present</p>
+                    <p>January 2026 – April 2026</p>
                 </div>
             </div>
 
@@ -163,7 +164,7 @@
                     <p class="bold">Team</p>
                 </div>
                 <div>
-                    <p>1 Backend Developer, 1 Frontend Developer, 2 Product Managers</p>
+                    <p>1 Backend Developer, 1 Frontend Developer, 1 Product Manager</p>
                 </div>
             </div>
 
@@ -182,9 +183,8 @@
                     <p class="bold">Impact</p>
                 </div>
                 <div>
-                    <p>The Activity Center establishes a standardized pattern for background process tracking across
-                        SAP's analytics products, giving users clear visibility into system activity and reducing
-                        uncertainty during long-running operations.</p>
+                    <p>Establishes a shared background process tracker across SAC, DSP, and BDC, replacing three
+                        divergent per-product implementations.</p>
                 </div>
             </div>
 
@@ -199,14 +199,11 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">All SAP products must comply with a set of UX Consistency standards</h2>
-            <p>SAP’s UX Consistency (UXC) standards define how common UI elements and patterns should appear and behave
-                across all SAP products and lines of business.
-            </p>
-
-            <p>These standards include shared elements such as Notifications, the Shell Bar, Side Navigation, and User
-                Settings. Standardizing these patterns ensures users encounter familiar, predictable patterns as they
-                move between SAP products.
+            <h2 class="heading first">SAP’s UX Consistency standards set hard constraints on shared UI patterns</h2>
+            <p>SAP’s UX Consistency (UXC) standards define how common UI elements and patterns must appear and behave
+                across all SAP products and lines of business. They cover shared elements such as Notifications, the
+                Shell Bar, Side Navigation, and User Settings, ensuring users encounter familiar, predictable patterns
+                as they move between products.
             </p>
 
             <p>For Data & Analytics products like <a
@@ -214,8 +211,10 @@
                     Analytics Cloud</a>,
                 <a href="https://www.sap.com/canada/products/data-cloud/datasphere.html" target="_blank">SAP
                     Datasphere</a>, and <a href="https://www.sap.com/canada/products/data-cloud.html"
-                    target="_blank">SAP Business Data Cloud</a> – which are often used together as part of a larger data workflow – this foundational
-                consistency is especially important for users whose journey spans multiple products.
+                    target="_blank">SAP Business Data Cloud</a>. These products are often used together as part of a
+                larger data
+                workflow, so this consistency is especially critical. Users moving between products rely on shared UI
+                conventions to orient themselves, and any divergence creates friction at the seams.
             </p>
         </section>
 
@@ -228,42 +227,47 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">Background processes were in the wrong place and handled inconsistently
-                across products</h2>
-            <p>In SAC and DSP, background processes — imports, exports, downloads, and calendar edits — were
-                surfaced inside the Notifications panel alongside standard user notifications. With 100+ unique
-                notification messages across all application areas within each product, the panel became bloated and
-                difficult to scan.</p>
+            <h2 class="heading first">Tackling a usability issue and a compliance gap</h2>
 
-            <p>The UI patterns for these processes were also inconsistent. In some features, the notification title
-                changed dynamically as the process progressed; in others it stayed static. Some used a progress bar;
-                others indicated progress with dynamic text. There was no standard for notification copy either —
-                each feature team wrote their own message text, leading to inconsistencies in punctuation, file name
-                formatting, and phrasing across process types.</p>
+            <h3 class="subheading">Problem 1: Background processes were buried in Notifications</h3>
+            <p>Customer feedback pointed to a consistent usability problem: the Notifications panel had become too
+                cluttered to use. Background processes (imports, exports, downloads, and calendar edits) were
+                surfaced alongside standard user notifications. With 100+ unique notification types across
+                application areas in each product, the panel became bloated and difficult to scan.</p>
 
-            <p>These processes also violated the UXC definition of notifications, which requires notification
-                content to remain static once sent. Beyond compliance, this created three user-facing problems:</p>
+            <blockquote class="feedback-quote">
+                <p>"I had 900+ notifications at a point. So there is no way that I can find the relevant things."</p>
+                <cite>— SAP Analytics Cloud user feedback, September 2025</cite>
+            </blockquote>
 
-            <!-- Placeholder: add before-state screenshots from slide deck -->
+            <blockquote class="feedback-quote">
+                <p>"Notifications are useless, there are too many, and no way to indicate priority."</p>
+                <cite>— SAP Analytics Cloud user feedback, December 2025</cite>
+            </blockquote>
 
-            <div class="highlight">
-                <h2 class="h2-sm issue">CHALLENGE #1: BACKGROUND PROCESSES GET BURIED</h2>
-                <h3 class="insights">Background processes can take several minutes to complete. In that time, other
-                    notifications from across the product continue to accumulate, pushing the process further down
-                    the panel and making it hard to find.</h3>
+            <br>
+            <br>
+
+            <h3 class="subheading">Problem 2: Each feature team handled background processes differently</h3>
+            <p>The UI patterns were also inconsistent across products. Each feature team had implemented their own
+                approach to progress indicators, state changes, and notification copy, with no shared standard.</p>
+
+            <div>
+                <a href="img/activity-center/current-implementation.png" target="_blank" class="pop-up-link"><img
+                        class="static-img comparison" src="img/activity-center/current-implementation-dark.png"
+                        data-light-src="img/activity-center/current-implementation.png"
+                        data-dark-src="img/activity-center/current-implementation-dark.png"
+                        alt="Current implementation of background processes across SAC and DSP"></a>
             </div>
 
-            <div class="highlight">
-                <h2 class="h2-sm issue">CHALLENGE #2: INCONSISTENT PATTERNS ACROSS PRODUCTS</h2>
-                <h3 class="insights">SAC, DSP, and BDC each surfaced background processes differently, creating
-                    different expectations and behaviors depending on which product a user was working in.</h3>
-            </div>
+            <br>
+            <br>
 
-            <div class="highlight">
-                <h2 class="h2-sm issue">CHALLENGE #3: INTERRUPTED WORKFLOWS</h2>
-                <h3 class="insights">Without persistent status, users either had to wait in place or navigate away and
-                    lose track of what was running.</h3>
-            </div>
+            <h3 class="subheading">Problem 3: Background processes violated the UXC notification standard</h3>
+            <p>UXC defines notifications as static messages: once sent, the content must not change. Background
+                processes violated this by design, as their titles, descriptions, and states update continuously
+                as the process runs.</p>
+
         </section>
 
 
@@ -276,36 +280,32 @@
             </div>
 
             <h2 class="heading first">Introducing the Activity Center</h2>
-            <p>The Activity Center is a dedicated panel in the application shell where users can view and track all
-                background processes across SAC, DSP, and BDC. Each process appears as a list item that updates
+            <p>The Activity Center is a dedicated panel in the shell bar where users can view and track all
+                background processes in SAC, DSP, and BDC. Each process appears as a list item that updates
                 in place through five states: queued, in progress, completed, completed with warnings, and failed.</p>
 
-            <p>Per UXC-016, product-specific shell actions must appear immediately to the right of the Notifications
-                icon. I placed the Activity Center entry point in that position across all three products using a
-                consistent shell bar icon, giving users a predictable entry point without disrupting the existing
-                shell layout.</p>
+            <p class="add-pad">Users can open the Activity Center at any time without disrupting their current workflow.
+                Background processes are removed from the Notifications panel entirely, bringing SAC and DSP into
+                compliance with the UXC notification standard.</p>
 
-            <p>Users can open the Activity Center at any time without disrupting their current workflow. Background
-                processes are removed from the Notifications panel entirely, bringing SAC and DSP into compliance
-                with the UXC notification standard.</p>
+            <figure>
+                <video src="vid/sac-demo-dark.mp4" autoplay loop muted playsinline></video>
+            </figure>
 
-            <!-- Placeholder: add solution/demo screenshots -->
         </section>
 
 
 
-        <!-- ====================== KEY DESIGN DECISIONS ====================== -->
+        <!-- ====================== KEY DECISIONS ====================== -->
         <section id="decisions">
             <div class="section-head">
                 <h2 class="h2-sm">KEY DESIGN DECISIONS</h2>
                 <hr>
             </div>
 
-            <h2 class="heading first">A deep dive into the decisions that shaped the pattern</h2>
-
             <!-- DECISION 1 -->
             <div>
-                <h2 class="heading">Showing Progress Without a Progress Bar</h2>
+                <h2 class="heading first">Showing Progress Without a Progress Bar</h2>
                 <h3 class="subheading">Working within a Design System constraint that ruled out the most obvious
                     approach.</h3>
 
@@ -318,7 +318,7 @@
                     <p>One approach was to display only static state labels per item ("Queued", "In Progress",
                         "Completed", "Failed") with no dynamic content while a task is running. This is fully
                         compliant and technically lightweight, but provides minimal information during the most
-                        critical moment — when a task is actively running and a user wants to know how far along it is.
+                        critical moment: when a task is actively running and a user wants to know how far along it is.
                     </p>
                 </div>
 
@@ -337,17 +337,21 @@
 
             <!-- DECISION 2 -->
             <div>
-                <h2 class="heading">Designing for Cross-Product Consistency</h2>
-                <h3 class="subheading">One pattern, three products with different shells.</h3>
+                <h2 class="heading">Resolving Naming Conflicts Across Three Products</h2>
+                <h3 class="subheading">Finding terminology that was unambiguous in SAP's existing ecosystem.</h3>
 
-                <p>SAC, DSP, and BDC each have different shell implementations and product-specific workflows. The
-                    Activity Center pattern needed to work across all three without requiring each product team to
-                    build a custom solution.</p>
+                <p>Naming the panel required checking it against existing SAP terminology, not just industry
+                    conventions. Terms commonly used for this pattern in other enterprise SaaS products ("Task Panel,"
+                    "System Monitor," "Activity") each carried conflicting meaning in SAP's context. "Task Center" is
+                    already an SAP product for workflow task management. "Monitoring" is already an established feature
+                    in DSP, where it refers to data integration and replication task monitoring, a different scope
+                    entirely.</p>
 
-                <p>I worked with product and engineering teams across all three products to define a shared interaction
-                    model: a consistent entry point, consistent status states, and a consistent list structure. Product
-                    teams then implement the pattern within their own shell without diverging from the core
-                    behavior.</p>
+                <p>I evaluated naming options against two criteria: clarity for users moving between products, and zero
+                    overlap with existing features or product names across SAC, DSP, and BDC. "Activity Center" was the
+                    strongest option. It communicates ongoing background activity without implying user-assigned tasks
+                    ("Task Center"), system administration ("System Monitor"), or data flow performance metrics
+                    ("Monitoring").</p>
             </div>
 
             <!-- DECISION 3 -->
@@ -359,7 +363,7 @@
                     the icons already in use across SAC, DSP, and BDC to ensure the new icon would not be confused
                     with an existing feature in any of the three products.</p>
 
-                <p>I also evaluated semantic alignment — the icon needed to communicate "something is running in the
+                <p>I also evaluated semantic alignment: the icon needed to communicate "something is running in the
                     background" in a way that matched how users think about pending or ongoing work, and that
                     differentiated clearly from the Notifications bell sitting immediately to its left.</p>
 
@@ -376,7 +380,7 @@
 
                 <p>In most cases, background processes start almost immediately after being triggered. Showing a
                     Queued state that transitions to In Progress within one or two seconds would cause the entry to
-                    visually flicker — appearing briefly in one state before jumping to another.</p>
+                    visually flicker, appearing briefly in one state before jumping to another.</p>
 
                 <p>I defined a threshold: the Queued state should only be shown if it will persist longer than
                     approximately 2–3 seconds. If a process starts immediately, the entry begins at In Progress.
@@ -390,7 +394,7 @@
                 <h3 class="subheading">Keeping the list clean across a full process lifecycle.</h3>
 
                 <p>Each background process entry updates within the same list item as its state changes, rather than
-                    creating a new item per state. The alternative — appending a new entry at each transition — would
+                    creating a new item per state. Appending a new entry at each transition would
                     cause the panel to fill with duplicates during active use, making it harder to follow any
                     individual process.</p>
 
@@ -419,6 +423,18 @@
                 long-running operations, and establish a cross-product standard that product teams can build on as
                 new process types are introduced.</p>
 
+            <h2 class="heading">Rollout and Governance</h2>
+            <p>Shipping the component is only part of the work. Because each feature team writes its own activity
+                center message copy independently, consistency depends on teams following the messaging guidelines
+                I established alongside the component specs.</p>
+
+            <p>The rollout runs on two tracks. Externally, customers will be introduced through a What's New dialog
+                and an external blog post at launch. Internally, the PM will distribute a What's New report to
+                product managers across all three products. I will present the Activity Center at DNA Exchange (SAP's
+                global Data & Analytics design knowledge sharing forum) to ensure design, development, UA, and PM
+                teams across the organization are aligned on both the component and the messaging framework before
+                teams begin adopting it.</p>
+
             <!-- Placeholder: add adoption and usage metrics after Q4 2026 launch -->
         </section>
 
@@ -431,17 +447,18 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">Cross-product alignment requires more than agreement — it requires a shared
-                definition of the problem</h2>
+            <h2 class="heading first">Cross-product alignment requires more than agreement. It requires a shared
+                definition of the problem.</h2>
             <p>The hardest part of this project wasn't the component design. It was getting three product teams, each
                 with their own shell implementation and workflow priorities, to agree on what "consistent" actually
                 meant in practice. The surface pattern looks simple, but the alignment work underneath it was
                 substantial.</p>
 
-            <p>Working within the Notifications UI framework also sharpened how I think about design constraints.
-                Rather than treating the framework as a ceiling, I treated it as a set of guardrails and looked for
-                the best solution within them. That mindset led to a stronger outcome than simply defaulting to what
-                the framework made easy.</p>
+            <p>Working within the design system's constraints also sharpened how I think about problem-solving. SAP's
+                design system prohibits progress indicators for ongoing processes, which ruled out the most obvious
+                solution. Rather than falling back on static state labels alone, I used the description field to
+                surface dynamic progress text that updates in real time. The constraint forced a solution that ended
+                up working better for screen readers than a visual bar would have.</p>
         </section>
 
 
@@ -523,6 +540,9 @@
     </div>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 
 </html>

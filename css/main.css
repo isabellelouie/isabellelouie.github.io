@@ -3,6 +3,14 @@
     scroll-behavior: smooth;
 }
 
+/* Lenis smooth scroll overrides */
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
 /* Font Styles */
 body {
     font-family: "Google Sans Flex", "Google Sans", sans-serif;
