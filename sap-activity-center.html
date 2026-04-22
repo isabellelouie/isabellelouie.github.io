@@ -178,15 +178,15 @@
                 </div>
             </div>
 
-            <div class="grid case-intro one two">
+            <!-- <div class="grid case-intro one two">
                 <div>
                     <p class="bold">Impact</p>
                 </div>
                 <div>
-                    <p>Establishes a shared background process tracker across SAC, DSP, and BDC, replacing three
+                    <p>Established a shared background process tracker across SAC, DSP, and BDC, replacing three
                         divergent per-product implementations.</p>
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
@@ -199,22 +199,22 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">SAP’s UX Consistency standards set hard constraints on shared UI patterns</h2>
-            <p>SAP’s UX Consistency (UXC) standards define how common UI elements and patterns must appear and behave
-                across all SAP products and lines of business. They cover shared elements such as Notifications, the
+            <h2 class="heading first">SAP’s UX Consistency (UXC) standards set hard constraints on shared UI patterns
+            </h2>
+            <p>These UXC standards define how common UI elements and patterns must appear and behave
+                across all SAP products. They cover shared elements such as Notifications, the
                 Shell Bar, Side Navigation, and User Settings, ensuring users encounter familiar, predictable patterns
                 as they move between products.
             </p>
 
-            <p>For Data & Analytics products like <a
+            <p>This is important for Data & Analytics products like <a
                     href="https://www.sap.com/canada/products/data-cloud/cloud-analytics.html" target="_blank">SAP
                     Analytics Cloud</a>,
                 <a href="https://www.sap.com/canada/products/data-cloud/datasphere.html" target="_blank">SAP
                     Datasphere</a>, and <a href="https://www.sap.com/canada/products/data-cloud.html"
-                    target="_blank">SAP Business Data Cloud</a>. These products are often used together as part of a
-                larger data
-                workflow, so this consistency is especially critical. Users moving between products rely on shared UI
-                conventions to orient themselves, and any divergence creates friction at the seams.
+                    target="_blank">SAP Business Data Cloud</a>, which are often used together as part of a single data
+                workflow. Users moving between these products rely on shared UI conventions to orient themselves, and
+                inconsistencies create friction at every handoff.
             </p>
         </section>
 
@@ -227,13 +227,21 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">Tackling a usability issue and a compliance gap</h2>
+            <h2 class="heading first">Tackling a compliance gap while improving usability</h2>
 
-            <h3 class="subheading">Problem 1: Background processes were buried in Notifications</h3>
+            <h3 class="subheading">Problem 1: Background processes violated the UXC notification standard</h3>
+            <p>UXC defines notifications as static messages: once sent, the content must not change. Background
+                processes violated this by design, as their titles, descriptions, and states update continuously
+                as the process runs.</p>
+
+            <br>
+            <br>
+
+            <h3 class="subheading">Problem 2: Background processes were buried in the Notifications panel</h3>
             <p>Customer feedback pointed to a consistent usability problem: the Notifications panel had become too
-                cluttered to use. Background processes (imports, exports, downloads, and calendar edits) were
-                surfaced alongside standard user notifications. With 100+ unique notification types across
-                application areas in each product, the panel became bloated and difficult to scan.</p>
+                cluttered to use. Background processes such as imports, exports, downloads, and calendar edits were
+                surfaced alongside standard user notifications. With 100+ unique notification types across each product,
+                the panel became bloated and difficult to scan.</p>
 
             <blockquote class="feedback-quote">
                 <p>"I had 900+ notifications at a point. So there is no way that I can find the relevant things."</p>
@@ -248,7 +256,7 @@
             <br>
             <br>
 
-            <h3 class="subheading">Problem 2: Each feature team handled background processes differently</h3>
+            <h3 class="subheading">Problem 3: Each feature team handled background processes differently</h3>
             <p>The UI patterns were also inconsistent across products. Each feature team had implemented their own
                 approach to progress indicators, state changes, and notification copy, with no shared standard.</p>
 
@@ -259,14 +267,6 @@
                         data-dark-src="img/activity-center/current-implementation-dark.png"
                         alt="Current implementation of background processes across SAC and DSP"></a>
             </div>
-
-            <br>
-            <br>
-
-            <h3 class="subheading">Problem 3: Background processes violated the UXC notification standard</h3>
-            <p>UXC defines notifications as static messages: once sent, the content must not change. Background
-                processes violated this by design, as their titles, descriptions, and states update continuously
-                as the process runs.</p>
 
         </section>
 
@@ -280,16 +280,38 @@
             </div>
 
             <h2 class="heading first">Introducing the Activity Center</h2>
-            <p>The Activity Center is a dedicated panel in the shell bar where users can view and track all
-                background processes in SAC, DSP, and BDC. Each process appears as a list item that updates
-                in place through five states: queued, in progress, completed, completed with warnings, and failed.</p>
-
-            <p class="add-pad">Users can open the Activity Center at any time without disrupting their current workflow.
-                Background processes are removed from the Notifications panel entirely, bringing SAC and DSP into
+          
+            <!-- Feature 1 -->
+            <h3 class="subheading">A dedicated home for background processes</h3>
+            <p>Imports, exports, downloads, and calendar edits are no longer surfaced in the Notifications panel.
+                The Activity Center gives them a dedicated home, reducing clutter and bringing SAC and DSP into
                 compliance with the UXC notification standard.</p>
 
             <figure>
                 <video src="vid/sac-demo-dark.mp4" autoplay loop muted playsinline></video>
+            </figure>
+
+            <!-- Feature 2 -->
+            <h3 class="subheading">A unified UI framework for Data & Analytics, built to scale</h3>
+            <p>Each background process appears as a list item that updates dynamically as it runs. A single shared
+                pattern replaces the inconsistent implementations across SAC, DSP, and BDC feature teams.</p>
+
+            <figure>
+                <img src="https://placehold.co/1200x600/e8edf2/6b7280?text=Five+process+states:+queued+%E2%86%92+in+progress+%E2%86%92+complete"
+                    alt="The five activity states: queued, in progress, completed, completed with warnings, failed"
+                    style="border-radius: 8px; width: 100%;">
+            </figure>
+
+            <!-- Feature 3 -->
+            <h3 class="subheading">Sort by date or importance, so nothing critical gets missed</h3>
+            <p>The Activity Center supports two sort modes. Sort by date is enabled by default, showing processes in
+                the order they were triggered. Sort by importance surfaces failed processes and those requiring user
+                action at the top of the panel, so critical items are never buried.</p>
+
+            <figure>
+                <img src="https://placehold.co/1200x600/e8edf2/6b7280?text=Sort+by+Date+vs+Sort+by+Importance"
+                    alt="Activity Center sort modes: by date and by importance"
+                    style="border-radius: 8px; width: 100%;">
             </figure>
 
         </section>
