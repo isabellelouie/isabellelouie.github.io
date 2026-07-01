@@ -56,7 +56,7 @@ h2 {
 
 .home h1 {
     font-weight: 450;
-    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-size: clamp(1.25rem, 2.5vw, 1.65rem);
     letter-spacing: -0.1%;
     text-align: left;
     padding-bottom: 1rem;
@@ -127,11 +127,10 @@ h2.case-tag {
 
     /* rounded buttons */
     background-color: #ffffff;
-    border-radius: 75px;
+    border-radius: 8px;
     border: solid 1px;
     border-color: #33333350;
     transition: 0.2s;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05);
 
     display: inline;
 }
@@ -146,11 +145,10 @@ h2.case-tag {
 
     /* rounded buttons */
     background-color: #f8f9ff;
-    border-radius: 75px;
+    border-radius: 8px;
     border: solid 1px;
     border-color: #33333350;
     transition: 0.2s;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.075);
 
     display: inline;
 }
@@ -309,7 +307,7 @@ h3.insights {
 h1 em,
 p strong {
     font-style: normal;
-    background: linear-gradient(90deg, #1b8463, #5b78e8);
+    background: linear-gradient(90deg, #1a9eb8, #4a86ed);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -332,7 +330,7 @@ h2 em {
 
 /* Navigation */
 nav.navbar {
-    background-color: rgba(249, 252, 252, 0.82);
+    background-color: rgba(249, 252, 252, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
@@ -341,9 +339,10 @@ nav.navbar {
     position: sticky;
     top: 0;
 
+    border-bottom: 1px solid #ddd;
     width: 100%;
     z-index: 10;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -230,16 +230,16 @@
             <h2 class="heading first">Tackling a compliance gap while improving usability</h2>
 
             <h3 class="subheading">Problem 1: Background processes violated the UXC notification standard</h3>
-            <p>UXC defines notifications as static messages: once sent, the content must not change. Background
-                processes violated this by design, as their titles, descriptions, and states update continuously
+            <p>UXC defines notifications as static messages: once sent, the content must not change. The nature of background
+                processes violates this definition, as their titles, descriptions, and states update continuously
                 as the process runs.</p>
 
             <br>
             <br>
 
             <h3 class="subheading">Problem 2: Background processes were buried in the Notifications panel</h3>
-            <p>Customer feedback pointed to a consistent usability problem: the Notifications panel had become too
-                cluttered to use. Background processes such as imports, exports, downloads, and calendar edits were
+            <p>Customer feedback pointed to a consistent usability problem: the Notifications panel had become way too
+                cluttered. Background processes such as imports, exports, downloads, and calendar edits were
                 surfaced alongside standard user notifications. With 100+ unique notification types across each product,
                 the panel became bloated and difficult to scan.</p>
 
@@ -255,10 +255,11 @@
 
             <br>
             <br>
+            <br>
 
             <h3 class="subheading">Problem 3: Each feature team handled background processes differently</h3>
             <p>The UI patterns were also inconsistent across products. Each feature team had implemented their own
-                approach to progress indicators, state changes, and notification copy, with no shared standard.</p>
+                approach to progress indicators, state changes, and UI text, with no shared standard.</p>
 
             <div>
                 <a href="img/activity-center/current-implementation.png" target="_blank" class="pop-up-link"><img
@@ -280,7 +281,7 @@
             </div>
 
             <h2 class="heading first">Introducing the Activity Center</h2>
-          
+
             <!-- Feature 1 -->
             <h3 class="subheading">A dedicated home for background processes</h3>
             <p>Imports, exports, downloads, and calendar edits are no longer surfaced in the Notifications panel.
@@ -293,8 +294,11 @@
 
             <!-- Feature 2 -->
             <h3 class="subheading">A unified UI framework for Data & Analytics, built to scale</h3>
-            <p>Each background process appears as a list item that updates dynamically as it runs. A single shared
-                pattern replaces the inconsistent implementations across SAC, DSP, and BDC feature teams.</p>
+            <p>The Activity Center is built on a shared component spec and messaging guidelines that apply across
+                SAC, DSP, and BDC. Rather than letting each feature team define their own progress indicators, state
+                labels, and copy, I established a single framework that all three products implement. The spec is
+                extensible by design: as new process types are introduced, teams can adopt the pattern without
+                diverging from the standard.</p>
 
             <figure>
                 <img src="https://placehold.co/1200x600/e8edf2/6b7280?text=Five+process+states:+queued+%E2%86%92+in+progress+%E2%86%92+complete"
@@ -305,7 +309,7 @@
             <!-- Feature 3 -->
             <h3 class="subheading">Sort by date or importance, so nothing critical gets missed</h3>
             <p>The Activity Center supports two sort modes. Sort by date is enabled by default, showing processes in
-                the order they were triggered. Sort by importance surfaces failed processes and those requiring user
+                the order they were last updated. Sort by importance surfaces failed processes and those requiring user
                 action at the top of the panel, so critical items are never buried.</p>
 
             <figure>
@@ -328,8 +332,8 @@
             <!-- DECISION 1 -->
             <div>
                 <h2 class="heading first">Showing Progress Without a Progress Bar</h2>
-                <h3 class="subheading">Working within a Design System constraint that ruled out the most obvious
-                    approach.</h3>
+                <h3 class="subheading">Working within a design system constraint that ruled out the most obvious
+                    approach</h3>
 
                 <p>The most intuitive way to communicate task progress is a visual progress bar. SAP's Design System
                     explicitly prohibits the NativeUI5 Progress Indicator component for running or ongoing processes,
@@ -360,7 +364,7 @@
             <!-- DECISION 2 -->
             <div>
                 <h2 class="heading">Resolving Naming Conflicts Across Three Products</h2>
-                <h3 class="subheading">Finding terminology that was unambiguous in SAP's existing ecosystem.</h3>
+                <h3 class="subheading">Finding terminology that was unambiguous in SAP's existing ecosystem</h3>
 
                 <p>Naming the panel required checking it against existing SAP terminology, not just industry
                     conventions. Terms commonly used for this pattern in other enterprise SaaS products ("Task Panel,"
@@ -379,7 +383,7 @@
             <!-- DECISION 3 -->
             <div>
                 <h2 class="heading">Selecting the Shell Bar Icon</h2>
-                <h3 class="subheading">Ruling out overlap before committing to a symbol.</h3>
+                <h3 class="subheading">Ruling out overlap before committing to a symbol</h3>
 
                 <p>Adding a new icon to the shell bar required more than choosing one that looked right. I audited
                     the icons already in use across SAC, DSP, and BDC to ensure the new icon would not be confused
