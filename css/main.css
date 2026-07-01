@@ -497,6 +497,26 @@ figure video {
     align-items: center;
 }
 
+.footer.grey.grid > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.footer-right a p {
+    margin: 0;
+}
+
 
 
 .footer.grey {
