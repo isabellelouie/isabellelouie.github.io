@@ -141,12 +141,10 @@
     <!-- ====================== FOOTER ====================== -->
     <div class="footer grey grid">
         <div>
-            <a href="https://github.com/isabellelouie/isabellelouie.github.io" target="_blank">
-                <p class="float-left">Coded by me!</p>
-            </a>
+            <p class="float-left">📍&nbsp; Toronto, ON <span class="footer-time">&nbsp;·&nbsp; <span id="toronto-time"></span></span></p>
         </div>
         <div class="float-center">
-            <p><span style="font-family: sans-serif">©</span> Isabelle Louie 2026</p>
+            <p>© Isabelle Louie 2026</p>
         </div>
         <div>
             <a href="https://www.linkedin.com/in/isabellelouie/" target="_blank">
@@ -163,6 +161,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script>
+        function updateTorontoTime() {
+            const time = new Date().toLocaleTimeString('en-US', {
+                timeZone: 'America/Toronto',
+                hour: 'numeric',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+            document.getElementById('toronto-time').textContent = time;
+        }
+        updateTorontoTime();
+        setInterval(updateTorontoTime, 1000);
+    </script>
 </body>
 
 </html>
