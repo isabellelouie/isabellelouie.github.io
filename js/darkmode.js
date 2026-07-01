@@ -1,12 +1,12 @@
 'use strict';
 
 // Apply saved theme immediately to prevent flash of wrong theme
-// Default is now dark; only remove dark class if user has explicitly chosen light
+// Default is light; only add dark class if user has explicitly chosen dark
 (function () {
-    if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.classList.remove('dark');
-    } else {
+    if (localStorage.getItem('theme') === 'dark') {
         document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
     }
 })();
 
