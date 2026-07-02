@@ -5,6 +5,12 @@ main = "chat-proxy.js"
 [ai]
 binding = "AI"
 
+[[unsafe.bindings]]
+type = "ratelimit"
+name = "RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
 [observability]
 enabled = true
 

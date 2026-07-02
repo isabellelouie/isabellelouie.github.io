@@ -194,6 +194,13 @@ export default {
       return json({ error: 'Forbidden' }, 403);
     }
 
+    // Rate limit — 20 requests per IP per 60 seconds
+    const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+    const { success } = await env.RATE_LIMITER.limit({ key: ip });
+    if (!success) {
+      return json({ error: 'Too many requests — please try again shortly.' }, 429);
+    }
+
     let message;
     try {
       const body = await request.json();
