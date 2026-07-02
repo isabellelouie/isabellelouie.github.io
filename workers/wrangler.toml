@@ -1,0 +1,13 @@
+name = "isabelle-portfolio-chat"
+compatibility_date = "2024-01-01"
+main = "chat-proxy.js"
+
+[ai]
+binding = "AI"
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+invocation_logs = true

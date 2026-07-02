@@ -68,6 +68,7 @@
     <title>Isabelle Louie - UX Portfolio</title>
     <script src="js/darkmode.js"></script>
     <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
 
 <body class="dotted home-page">
@@ -135,8 +136,6 @@
         </div>
 
     </section>
-
-
 
 
     <!-- ====================== RECENT PROJECTS ====================== -->
@@ -337,6 +336,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/chatbot.js" defer></script>
     <script>
         function updateTorontoTime() {
             const time = new Date().toLocaleTimeString('en-US', {
@@ -350,6 +350,11 @@
         }
         updateTorontoTime();
         setInterval(updateTorontoTime, 1000);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new PortfolioChatbot('https://isabelle-portfolio-chat.isabellelouie.workers.dev');
+        });
     </script>
 </body>
 
