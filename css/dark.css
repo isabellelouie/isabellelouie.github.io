@@ -54,7 +54,7 @@ html.dark .feedback-quote {
 }
 
 html.dark .feedback-quote p {
-    color: #c8c8c8;
+    color: #b0b0b0;
 }
 
 html.dark .feedback-quote cite {
@@ -78,7 +78,7 @@ html.dark h4 {
 
 html.dark p,
 html.dark li {
-    color: #999;
+    color: #b0b0b0;
 }
 
 html.dark h2.h2-sm {
@@ -94,7 +94,7 @@ html.dark .heading {
 }
 
 html.dark .subtitle {
-    color: #999;
+    color: #b0b0b0;
 }
 
 html.dark .card a {
@@ -196,7 +196,7 @@ html.dark h1 em,
 html.dark p strong,
 html.dark h3.subheading,
 html.dark .collapsible {
-    color: #3ecfa0;
+    color: #2B969C;
 }
 
 html.dark .process-card {

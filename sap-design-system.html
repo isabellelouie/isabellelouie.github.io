@@ -187,12 +187,13 @@
                     <p class="bold">Role</p>
                 </div>
                 <div>
-                    <p style="margin-bottom: 0.6rem;">Designed 11 components and collaborated with 4 development teams
-                        on implementation.</p>
-                    <p style="margin-bottom: 0.6rem;">Led internal communications to drive adoption, including an
-                        organization-wide launch presentation.</p>
-                    <p>Shaped the post-launch strategy for the kit, including release cadences, a dedicated SharePoint
-                        portal, and a contribution framework.</p>
+                    <p style="margin-bottom: 0.6rem;">Designed <strong>11 components</strong> and collaborated with 4
+                        development teams on implementation.</p>
+                    <p style="margin-bottom: 0.6rem;">Led communications to drive adoption across our
+                        organization of <strong>165+ designers</strong>.</p>
+                    <p>Shaped the post-launch strategy for the kit, including release cadences, a contribution
+                        framework, and a design system resources portal.
+                    </p>
                 </div>
             </div>
 
@@ -201,11 +202,10 @@
                     <p class="bold">Impact</p>
                 </div>
                 <div>
-                    <p style="margin-bottom: 0.6rem;">The DNA Web UI Kit drove measurable adoption across the
-                        organization. My Data Token component
-                        alone grew to <strong>105,000+</strong> inserts, becoming the most widely used DNA component
-                        across the organization. </p>
-                    <p>Within months, 76 designers had also onboarded to the design system portal to access release
+                    <p style="margin-bottom: 0.6rem;">Since launch, the DNA Web UI Kit has been used across <strong>150+
+                            design projects</strong>. My Data Token component alone grew to <strong>115,000+</strong>
+                        inserts, becoming the most widely used DNA component across the organization. </p>
+                    <p>Within months, 100+ designers had also onboarded to the design system portal to access release
                         notes and learning resources.</p>
                 </div>
             </div>
@@ -257,7 +257,7 @@
             </div>
 
             <h2 class="heading first">165+ analytics designers with no shared design library</h2>
-            <p>SAP’s Web UI Kit covers foundational tokens and atoms, but not the DNA-specific patterns our analytics
+            <p>SAP’s Web UI Kit provides foundational tokens and atoms, but not the DNA-specific patterns our analytics
                 products rely on. This created three key challenges:</p>
 
             <div class="highlight">
@@ -275,8 +275,7 @@
             <div class="highlight">
                 <h2 class="h2-sm issue">CHALLENGE #3: POOR SCALABILITY & MAINTENANCE</h2>
                 <h3 class="insights">Adapting designs for new features becomes inefficient without a shared,
-                    maintainable
-                    foundation.</h3>
+                    maintainable foundation.</h3>
             </div>
         </section>
 
@@ -290,9 +289,9 @@
             </div>
 
             <h2 class="heading first">Introducing the DNA Web UI Kit</h2>
-            <p class="add-pad">The DNA Web UI Kit builds on SAP's existing design system to centralize custom
-                components, patterns, page layouts, and guidelines. Each component page includes usage guidelines,
-                common implementation examples, visual specs for developers, and accessibility annotations.</p>
+            <p class="add-pad">The DNA Web UI Kit extends from SAP's design system to centralize DNA-specific
+                components, patterns, and layouts. Each page includes usage guidelines,
+                implementation examples, visual specs for developers, and accessibility annotations.</p>
 
             <div class="grid two">
                 <div>
@@ -319,7 +318,7 @@
             </div>
 
             <h2 class="heading first">I designed 11 components and patterns for the DNA Web UI Kit</h2>
-            <p>Each went through a structured process involving alignment with product design stakeholders, building the
+            <p>Each involved alignment with product design and development stakeholders, building the
                 component and writing documentation, and completing a final quality sign-off with the UI Kit Owner.</p>
 
             <p>Certain elements have been hidden or recreated due to NDA restrictions. </p>
@@ -440,13 +439,12 @@
         <!-- ====================== PROCESS ====================== -->
         <section id="spotlight">
             <div class="section-head">
-                <h2 class="h2-sm">COMPONENT SPOTLIGHT: DATA TOKEN</h2>
+                <h2 class="h2-sm">COMPONENT SPOTLIGHT</h2>
                 <hr>
             </div>
 
-            <h2 class="heading first">A deep dive into one of the kit's most complex components</h2>
-            <p>One component in particular became central to the kit: the Data Token. The Data Token is one of the most
-                frequently used elements in SAP Analytics Cloud (SAC) and Datasphere
+            <h2 class="heading first">A deep dive into the Data Token, one of the kit's most complex components</h2>
+            <p>The Data Token is one of the most frequently used elements in SAP Analytics Cloud (SAC) and Datasphere
                 (DSP).
             </p>
 
@@ -525,7 +523,7 @@
 
                 <br>
 
-                <h3 class="subheading">Key Design Decision: Structuring the Data Token for Flexibility</h3>
+                <h3 class="subheading">Structuring the Data Token for Flexibility (Before Figma Slots)</h3>
                 <p>The Data Token supports many configurations: leading icons, trailing icons, status indicators,
                     buttons, and combinations of these elements. The challenge was enabling that flexibility in Figma
                     without creating an unmanageable component.</p>
@@ -536,26 +534,20 @@
                         <br><br>
                         However, the number of variants would grow rapidly as configurations multiplied. This would
                         bloat the file, slow library performance, and make the component difficult to maintain.
-                        <br><br>
-                        If a required variant didn’t exist, designers would also need to detach the component to
-                        customize it, breaking the connection to future library updates.
                     </p>
                 </div>
 
                 <div class="highlight add-pad">
-                    <h2 class="h2-sm issue">OPTION B: NESTED SWAPPABLE INSTANCES (CHOSEN)</h2>
+                    <h2 class="h2-sm issue">OPTION B: NESTED SWAPPABLE INSTANCES (THIS WAS THE WAY)</h2>
                     <p>Instead, I designed leading and trailing element containers that hold swappable nested instances.
                         <br><br>
-                        Common elements are accessible through a dropdown menu, while designers can still use Figma’s
+                        Common elements are accessible through a dropdown, while designers can still use Figma’s
                         swap instance tool for custom elements when needed.
                         <br><br>
                         This structure keeps the file lightweight, preserves library performance at scale, and allows
                         the component to support new use cases without requiring detachment.
                     </p>
                 </div>
-
-                <p>This architecture made the component flexible enough to support dozens of analytics workflows while
-                    keeping the design library maintainable long-term.</p>
             </div>
 
 
@@ -564,21 +556,21 @@
                 <h2 class="heading">Step 3: Collaborating with Development</h2>
                 <h3 class="subheading">Bridging the gap between design specs and live implementation.</h3>
 
-                <p>Working across 4 development teams, I quickly realized that understanding how engineers built
-                    components was just as important as the design itself. I reviewed their CSS files, explored the UI5
+                <p>Working with 4 development teams, I quickly realized that understanding how engineers built
+                    components was just as important as the design itself. I reviewed their CSS library, explored the
+                    UI5
                     Demo Kit, and learned the variables and component structures already used in production so my specs
                     would map directly to implementation.</p>
 
                 <p>Getting developer feedback early surfaced an issue I hadn’t anticipated: I was over-speccing. My
-                    annotations repeated color variables, spacing values, and text styles that were already defined in
-                    the base component we were extending. Developers interpreted those details as intentional overrides
-                    and would have
-                    hard-coded them, bypassing the default system tokens.</p>
+                    annotations repeated variables and values that were already defined in
+                    the base component we were extending from. Developers interpreted those details as intentional
+                    overrides
+                    and would have hard-coded them, bypassing the default system tokens.</p>
 
                 <p>To avoid unnecessary custom code and keep the components future-proof as SAP’s theming system
-                    evolved, I updated our handoff approach to only specify deviations from defaults rather than
-                    restating them. This change simplified the specs and led to more accurate implementations across
-                    teams.</p>
+                    evolved, I updated our handoff approach to only specify deviations from defaults. This change
+                    simplified the specs and led to more accurate implementations across teams.</p>
 
                 <p>Following the work on the Data Token, I used these specs to create a handoff template, which we
                     documented and added directly to the DNA Web UI Kit.</p>
@@ -664,17 +656,17 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">1,000+ implementations in 3 weeks. 105,000+ in 10 months.</h2>
+            <h2 class="heading first">1,000+ implementations in 3 weeks. 115,000+ in a year</h2>
             <h3 class="subheading">Adoption that grew steadily... and kept growing.</h3>
             <p>Just three weeks after launch, the Data Token had been used over 1,000 times by designers across six
-                teams. Within ten months, it surpassed 105,000 inserts, becoming the most widely used component in the
+                teams. Within a year, it surpassed 115,000 inserts, becoming the most widely used component in the
                 DNA Web UI Kit.
             </p>
-            <p> The system has since been adopted by 71 project teams, enabling designers to reuse shared patterns
+            <p> The system has since been used across 150 projects, enabling designers to reuse shared patterns
                 rather than recreating components across products.</p>
 
             <p>The strategy rollout in Q4 2025 extended that reach. The DNA Design Systems SharePoint portal received
-                379 total views from 76 unique designers in its first few months, with viewership up 19% in the
+                610 total views from 111 unique designers in its first few months, with viewership up 19% in the
                 most recent 30-day period, indicating sustained and growing engagement.</p>
 
             <div class="grid two">
@@ -740,15 +732,18 @@
             <h2 class="heading first">Scaling design through systems thinking</h2>
             <h3 class="subheading">What this project taught me about people, process, and ownership.
             </h3>
-            <p>Building a design system is only half the work. Getting an organization to adopt it is the other half.
-                Aligning 10 contributors on a single Data Token proposal, collaborating with 4 development teams
-                across different codebases, and building the infrastructure to sustain adoption across 165+ designers
-                all made that clear.</p>
+            <p>Before this project, I assumed the majority of the work would be designing components in Figma. Instead,
+                I found that creating the component was often the shortest part of the process. Most of the effort went
+                into aligning stakeholders, gathering feedback, refining proposals, working with development teams across
+                different codebases, validating implementation, and planning how the work would be rolled out and
+                maintained over time.</p>
 
-            <p>I also learned what it means to own something end-to-end — from the first alignment meeting to live
-                sign-off, and from the launch presentation to the rollout strategy that followed. This experience
-                solidified my interest in design systems as a long-term area of growth, and in work that sits at the
-                intersection of people, process, and systems thinking.</p>
+            <p>Working in an organization the size of SAP gave me a new appreciation for how much collaboration goes
+                into building a successful design system. A single Data Token proposal required alignment across 10
+                contributors, coordination with four development teams, and careful quality checks before it could be
+                released. It also gave me my first opportunity to own a design system initiative from proposal through
+                implementation, launch, and adoption. Seeing each stage firsthand reinforced that design systems are as
+                much about enabling people and processes as they are about designing interfaces.</p>
         </section>
 
 

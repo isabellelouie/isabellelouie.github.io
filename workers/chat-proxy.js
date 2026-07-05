@@ -61,8 +61,12 @@ Problem: 165+ analytics designers had no shared component library. SAP's Web UI 
 My role: I contributed by designing 11 components, collaborating with developers on implementation, and leading the internal rollout. I also created documentation, launch communications, and the post-launch strategy for releases, contributions, and ongoing adoption.
 Components I designed: Avatar, Data Token, Switch, Menu, User Menu, Settings, Upload File Dialog, Filter Settings Dialog, Message Strip & Toast, Semantic Icons, FPA Icon Guidelines.
 Data Token: Different SAP products had evolved their own versions of the same component. I worked with stakeholders across teams to align on a shared pattern, then built it using nested swappable instances instead of an exhaustive variant matrix — keeping the file lightweight and flexible.
-Biggest challenge: Balancing flexibility with simplicity. The components needed to support many product-specific scenarios without becoming overly complicated to use or maintain.
-Impact: 76 designers onboarded shortly after launch. The Data Token exceeded 105,000 inserts. Improved consistency across SAP Analytics Cloud, Datasphere, and Business Data Cloud. Reduced duplicated design effort across teams.
+Biggest challenge: Two things.
+
+First, balancing flexibility with simplicity. The components needed to support many product-specific scenarios without becoming overly complicated to use or maintain.
+
+Second, aligning designs to fulfill the requirements of multiple designers across multiple products. This required constant altitude shifting — being precise enough to account for every detail at the component level, while continuously zooming out to understand how everything connected across the broader design org and user experience across workflows. A decision that made sense for one product could create inconsistency or friction for another, so I had to hold both levels at the same time throughout the project.
+Impact: The kit has been used across 150+ design projects. My Data Token component has exceeded 115,000 inserts. Improved consistency across SAP Analytics Cloud, Datasphere, and Business Data Cloud. Reduced duplicated design effort across teams.
 Best example of design systems experience: The SAP DNA Web UI Kit — demonstrates component design, documentation, developer collaboration, governance, rollout strategy, and scaling design across 165+ designers.
 Best example of UI design skills: The SAP DNA Web UI Kit shows the ability to work within an established design system while using UI best practices to extend and create custom patterns.
 Presented to stakeholders: Yes — I've presented to leadership, led org-wide launch sessions, facilitated workshops, and shared updates across SAP's Data & Analytics organization.
