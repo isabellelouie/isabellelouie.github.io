@@ -382,10 +382,15 @@
     }
 
     .grid.home-new {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-auto-flow: row;
         gap: 3rem;
+    }
+
+    .grid.home-new .card.span-3-row-break {
+        grid-column: span 2;
+        height: 2rem;
     }
 
     .home-new {
