@@ -523,29 +523,29 @@
 
                 <br>
 
-                <h3 class="subheading">Structuring the Data Token for Flexibility (Before Figma Slots)</h3>
+                <h3 class="subheading">Structuring the Data Token for Flexibility (Pre-Figma Slots)</h3>
                 <p>The Data Token supports many configurations: leading icons, trailing icons, status indicators,
-                    buttons, and combinations of these elements. The challenge was enabling that flexibility in Figma
-                    without creating an unmanageable component.</p>
+                    buttons, and combinations of these elements. Before Figma Slots was available, the challenge was
+                    enabling that flexibility without creating an unmanageable component.</p>
 
                 <div class="highlight">
-                    <h2 class="h2-sm issue">OPTION A: EXHAUSTIVE VARIANT MATRIX</h2>
+                    <h2 class="h2-sm issue">OPTION 1: EXHAUSTIVE VARIANT MATRIX</h2>
                     <p>One approach was to map each token configuration to a separate variant.
                         <br><br>
-                        However, the number of variants would grow rapidly as configurations multiplied. This would
-                        bloat the file, slow library performance, and make the component difficult to maintain.
+                        However, the number of variants would grow rapidly as configurations multiplied –
+                        bloating the file, slowing performance, and making the component difficult to maintain.
                     </p>
                 </div>
 
                 <div class="highlight add-pad">
-                    <h2 class="h2-sm issue">OPTION B: NESTED SWAPPABLE INSTANCES (THIS WAS THE WAY)</h2>
-                    <p>Instead, I designed leading and trailing element containers that hold swappable nested instances.
+                    <h2 class="h2-sm issue">OPTION 2: NESTED SWAPPABLE INSTANCES (THE BETTER WAY)</h2>
+                    <p>Instead, I designed leading and trailing element containers with swappable nested instances.
                         <br><br>
-                        Common elements are accessible through a dropdown, while designers can still use Figma’s
+                        Common elements were now accessible through a dropdown, and designers could still use Figma’s
                         swap instance tool for custom elements when needed.
                         <br><br>
-                        This structure keeps the file lightweight, preserves library performance at scale, and allows
-                        the component to support new use cases without requiring detachment.
+                        This structure kept the file lightweight, preserved library performance at scale, and allowed
+                        the component to support new use cases without detachment.
                     </p>
                 </div>
             </div>
@@ -557,23 +557,22 @@
                 <h3 class="subheading">Bridging the gap between design specs and live implementation.</h3>
 
                 <p>Working with 4 development teams, I quickly realized that understanding how engineers built
-                    components was just as important as the design itself. I reviewed their CSS library, explored the
-                    UI5
-                    Demo Kit, and learned the variables and component structures already used in production so my specs
-                    would map directly to implementation.</p>
+                    components was just as important as the design itself.</p>
 
-                <p>Getting developer feedback early surfaced an issue I hadn’t anticipated: I was over-speccing. My
-                    annotations repeated variables and values that were already defined in
-                    the base component we were extending from. Developers interpreted those details as intentional
-                    overrides
-                    and would have hard-coded them, bypassing the default system tokens.</p>
+                <p>To avoid details getting lost in translation, I reviewed their CSS libraries, demo kits, and code
+                    already in production to ensure technical feasibility for implementation.</p>
 
-                <p>To avoid unnecessary custom code and keep the components future-proof as SAP’s theming system
-                    evolved, I updated our handoff approach to only specify deviations from defaults. This change
+                <p>I also sought developer feedback early and often, which surfaced an unexpected issue: I was now
+                    over-speccing. My annotations repeated default variables that were already defined in the base
+                    component we were extending from, and developers interpreted those details as intentional overrides.
+                </p>
+
+                <p>To avoid unnecessary custom code and keep the components adaptable for future UI themes, I changed
+                    our handoff approach to only list deviations from defaults. This change
                     simplified the specs and led to more accurate implementations across teams.</p>
 
-                <p>Following the work on the Data Token, I used these specs to create a handoff template, which we
-                    documented and added directly to the DNA Web UI Kit.</p>
+                <p>Following the work on the Data Token, I used these specs to create a handoff template for the DNA Web
+                    UI Kit.</p>
             </div>
 
         </section>
@@ -607,10 +606,10 @@
             <div>
                 <h2 class="heading">Ongoing Strategy Development</h2>
                 <h3 class="subheading">How do we drive adoption and streamline communications?</h3>
-                <p>The kit launched with strong momentum, but lacked the infrastructure needed to sustain adoption.
+                <p>The kit launched with strong momentum, but lacked the infrastructure to sustain adoption.
                     Designers needed a clear way to find updates, ask questions, and contribute improvements.
                     <br><br>
-                    When I returned to the team full-time, I partnered with a senior design systems designer to define
+                    When I returned to the team full-time in July 2025, I partnered with a senior designer to define
                     the next phase of the system: a central resource hub, governance model, structured release cadence,
                     and dedicated communication channels.
                     <br><br>
@@ -639,8 +638,9 @@
 
                 <div class="highlight">
                     <h2 class="h2-sm issue">COMMUNICATION CHANNELS</h2>
-                    <h3 class="insights">A quarterly newsletter with each release. A dedicated Teams channel for design
-                        systems questions. Quarterly office hours open to the broader team.</h3>
+                    <h3 class="insights">A quarterly newsletter with each release, and a dedicated Teams channel for
+                        design
+                        systems questions.</h3>
                 </div>
 
             </div>
@@ -656,7 +656,7 @@
                 <hr>
             </div>
 
-            <h2 class="heading first">1,000+ implementations in 3 weeks. 115,000+ in a year</h2>
+            <h2 class="heading first">1,000+ implementations in 3 weeks → 115,000+ in a year</h2>
             <h3 class="subheading">Adoption that grew steadily... and kept growing.</h3>
             <p>Just three weeks after launch, the Data Token had been used over 1,000 times by designers across six
                 teams. Within a year, it surpassed 115,000 inserts, becoming the most widely used component in the
@@ -666,21 +666,13 @@
                 rather than recreating components across products.</p>
 
             <p>The strategy rollout in Q4 2025 extended that reach. The DNA Design Systems SharePoint portal received
-                610 total views from 111 unique designers in its first few months, with viewership up 19% in the
+                610 total views from 110+ unique designers in its first few months, with viewership up 19% in the
                 most recent 30-day period, indicating sustained and growing engagement.</p>
 
-            <div class="grid two">
-                <div>
-                    <a href="img/sap/analytics-data-token.png" target="_blank" class="pop-up-link"><img
-                            class="static-img comparison" src="img/sap/analytics-data-token.png" width="1920"
-                            height="1250" alt="Web Kit Analytics: Data Token Usage"></a>
-                </div>
-
-                <div>
-                    <a href="img/sap/analytics-library.png" target="_blank" class="pop-up-link"><img
-                            class="static-img comparison" src="img/sap/analytics-library.png" width="1920" height="1250"
-                            alt="Web Kit Analytics: DNA Team Usage"></a>
-                </div>
+            <div>
+                <a href="img/sap/analytics-library.png" target="_blank" class="pop-up-link"><img
+                        class="static-img comparison" src="img/sap/analytics-library.png" width="1920" height="1250"
+                        alt="DNA Web Kit Analytics: Component Usage"></a>
             </div>
 
         </section>
@@ -730,20 +722,26 @@
             </div>
 
             <h2 class="heading first">Scaling design through systems thinking</h2>
-            <h3 class="subheading">What this project taught me about people, process, and ownership.
+            <h3 class="subheading">What the DNA Web Kit taught me about people, process, and ownership.
             </h3>
-            <p>Before this project, I assumed the majority of the work would be designing components in Figma. Instead,
-                I found that creating the component was often the shortest part of the process. Most of the effort went
-                into aligning stakeholders, gathering feedback, refining proposals, working with development teams across
-                different codebases, validating implementation, and planning how the work would be rolled out and
-                maintained over time.</p>
+            <p>Prior to this project, I assumed design systems work focused on building components in Figma.
+                Instead, I found that creating components was often the shortest part of the process. The majority of
+                the work went into aligning stakeholders, refining proposals, collaborating with development teams
+                across different codebases, validating implementation, and planning for long-term adoption and
+                maintenance.</p>
 
             <p>Working in an organization the size of SAP gave me a new appreciation for how much collaboration goes
-                into building a successful design system. A single Data Token proposal required alignment across 10
-                contributors, coordination with four development teams, and careful quality checks before it could be
-                released. It also gave me my first opportunity to own a design system initiative from proposal through
-                implementation, launch, and adoption. Seeing each stage firsthand reinforced that design systems are as
-                much about enabling people and processes as they are about designing interfaces.</p>
+                into building a successful design system. With a single component proposal requiring alignment across 10
+                contributors, coordination with four development teams, and careful quality checks before release, I
+                learned that meaningful change depends on patience, clear communication, and building consensus around a
+                shared direction.</p>
+
+            <p>Looking ahead, I'm excited to continue evolving the DNA Design System as AI reshapes the way designers
+                work. As AI becomes part of everyday design workflows, I believe design systems have an even greater
+                role to play in providing consistency, structure, and quality at scale. I'm especially interested in
+                exploring how AI can strengthen the design system itself through better documentation, improved
+                discoverability, and more intelligent ways for designers to find and apply the right patterns, while
+                ensuring the system continues to evolve alongside the people who use it.</p>
         </section>
 
 
